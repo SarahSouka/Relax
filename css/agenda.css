@@ -1,0 +1,239 @@
+
+body{
+    font-family: 'Poppins';
+    margin-left: 75px;
+    margin-right: 75px;
+    color: #5c5c5b;
+    background-image: url(./assets/pissenlitJaune2.svg);
+    background-repeat: no-repeat;
+    background-size: 20%;
+    background-position:center right;     
+}
+
+#box{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+
+/* -----CALENDRIER------*/
+
+#divform{
+    width: 30%;
+    margin: 0;
+    display: flex;
+    margin-right: 30px;
+}
+
+button{
+    background-color: #fab529;
+    color: #fff;
+    padding: 10px;
+    border: 1px solid #fab529;
+    margin: 10px;
+    /*border-radius:10px;*/  
+}
+
+button:hover{
+    background-color:#c3c0c0 ;
+    color: #fab529#fff;
+    border: 1px solid #c3c0c0;
+}
+
+
+/*------REPONSE DB (EVENT)------*/
+
+#boxreponses{
+    width: 60%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;  
+}
+
+#reponse{
+    border-top: 1px solid #dededc;
+    margin: 15px;
+    display: flex;
+}
+
+ul{
+    padding:0;
+}
+
+li{
+    list-style-type: none;
+    padding: 5px;
+    font-size: 0.9em;
+}
+
+li:nth-of-type(2){
+    padding-left: 20px;
+}
+
+#dateimg{
+    display: flex;
+}
+
+#imgbox{
+    margin: 10px;
+    margin-top: 20px;
+    width: 260px;
+    height: 275px;
+}
+
+h3,h4{
+    margin: 5px;
+    margin-top: 20px;
+}
+
+h3{
+    font-family: 'Poppins Light';
+    font-size: 40px;
+    color: #fff;
+}
+
+h3:nth-of-type(2){
+    margin-top: 0;
+}
+
+p{
+    margin:5px;
+    font-family: 'Poppins Light';
+}
+
+#divdate{
+    background-color: #fab529;
+    height: 275px;
+    width: 75px;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.icones{
+    width: 10px;
+    height: auto;
+    margin: 0;
+    margin-right: 5px;
+}
+
+#iconeweb{
+    width: 10px;
+    height: auto;
+    margin: 0;
+    margin-right: 5px;
+    margin-left: 5px;
+}
+
+a{
+    text-decoration: none;
+    color: #5c5c5b;
+    font-size: 0.9em;  
+}
+
+a:hover{
+    text-decoration: underline; 
+}
+
+#lien {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fab529;
+    width: 50%;
+    padding: 5px;
+    border: 1px solid #fab529;
+    /*border-radius: 10px;*/
+    margin-top:20px;
+    position: relative;
+}
+
+#lien:hover{
+    opacity: 0.3;
+    border: 1px solid #fab529;
+}
+
+#blocinfos{
+    width: 50%;
+}
+
+#fleche{
+    height: 20px;
+    width: auto;
+    margin: 0;
+    color: #ffffff;
+    /*position: absolute;*/
+}
+
+@media (max-width: 1070px){
+     
+#reponse{
+    display: flex;
+    flex-direction: column;
+  
+} 
+    
+#blocinfos{
+    width: 100%;
+}    
+  
+#box{
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+}  
+
+body{
+    background-size: 50%;
+    background-position:center right;
+}    
+    
+#boxreponses{
+    width: 100%;
+} 
+    
+form{
+    padding-left: 10px;
+}
+      
+}
+
+@media (max-width: 530px){
+
+#dateimg{
+    display: flex;
+    flex-direction: column;
+}
+    
+#divdate{
+    background-color: transparent;
+    height: 30px;
+    width: auto;  
+    align-items:flex-start;
+}    
+    
+h3{
+    margin: 0;
+    margin-left: 10px;
+    color: #fab529;
+    font-family: 'Poppins Light';
+}
+    
+body{
+    margin-left: 10px;
+    margin-right: 10px;
+    background-image:url();
+}   
+    
+#box{
+    align-content: center;
+}   
+    
+#imgbox{
+    margin-top: 70px;
+}      
+    
+    
+}

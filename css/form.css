@@ -1,0 +1,98 @@
+*, *:before, *:after {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+ body{
+    margin-left: 75px;
+    margin-right: 75px;
+}
+    
+
+body {
+	font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+	color: #5c5c5b; 
+    background-image: url(../assets/fond3.svg);
+    background-size: 50%;
+    background-repeat:no-repeat;
+    background-position: left; 
+    padding-bottom: 50px;
+}	
+
+#choix {
+    display: flex;
+    justify-content: flex-end;
+    align-content: flex-end;
+    width: 100%;
+    padding-right: 75px;
+}
+
+form {
+    width: 590px;
+    height: 590px;
+    align-self: flex-end;
+    background-image: url(../assets/courbe1.svg);
+    background-size: 100%;
+    background-repeat:no-repeat;
+
+}
+
+h1 {
+    color: #508baa;
+    text-align: center;
+    padding-top: 80px;
+    padding-bottom: 60px;
+}
+
+label { 
+    display: inline-block; 
+    width: 250px; 
+    margin-right: 80px; 
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+#alentours > label{
+    margin-right: 10px; 
+} 
+
+#alentours > select{
+    display: inline-block; 
+    width: 110px; 
+    text-align: center; 
+    margin-left: -30px; 
+    background-color: #87c7d8;
+    border: none;
+	border-radius: 10px;
+    text-transform: uppercase;
+    box-shadow: 3px 3px 3px #aaa;
+} 
+
+#button {
+    display: inline-block; 
+    width: 100px; 
+    margin-right: 50px;
+    padding: 10px;
+    margin-left: 250px;
+    margin-top: 50px;
+}
+
+#alentours{
+    padding-left: 120px;
+}
+
+#checkbox{
+    padding-left: 120px;
+}
+
+#button{
+    font-size: 14px;
+    background-color: #87c7d8;
+    border: none;
+	border-radius: 10px;
+    text-transform: uppercase;
+    box-shadow: 3px 3px 3px #aaa;
+}
+

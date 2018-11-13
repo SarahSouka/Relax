@@ -1,0 +1,1 @@
+$(document).ready(function(){$(".texte h3").bind("touchstart touchend",function(s) {s.preventDefault(),$(".texte").toggleClass("hover_effect")})});

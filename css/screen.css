@@ -1,0 +1,524 @@
+
+
+/*
+*, *:before, *:after {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+*/
+
+/* Header ---------------------------- */
+header, main, footer {
+/*
+	margin-left: 75px;
+    margin-right: 75px;
+*/
+}
+
+
+header > div {
+    width: 100%;    
+    padding: 0px;
+    margin: 0;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    align-items: center;
+}
+/*butt et h1 invisibles avant mobile*/
+header > div:first-of-type {
+	display: none;
+	
+}
+/* Navigation ------------------------ */
+nav {
+    margin-top: 70px;
+	margin-bottom: 25px;
+	display: block;
+    position: inherit;
+	width: 100%;
+	height: auto;
+	background-color: transparent;
+	padding: 0;
+	
+
+}
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+nav li{
+	position: relative;
+	font-family: 'Poppins', sans-serif;
+	font-size: 20px;
+	padding-left: 1%;
+	padding-right: 1%;
+    
+}
+
+.snip1275 > li:first-of-type{
+	padding-left: 7%;
+}
+.snip1275 > li:last-of-type{
+	padding-right: 7% ;
+}
+/* Augmenter le padding à 10% */
+/*LOGO */
+.snip1275 >li:nth-child(4n){
+	margin-top: -50px;
+}
+#logo img{
+    margin: -15px;
+}
+.snip1275 .invisible a:before,
+.snip1275 .invisible a:after{
+	visibility: hidden;
+}
+	
+	
+nav a {
+    color: #5c5c5b;
+    text-decoration: none;
+    display: inline;
+    width: 100%;
+    height: 100%;
+}
+.snip1275 * {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: all 0.35s ease;
+  transition: all 0.35s ease;
+}
+.snip1275 a {
+  padding: 0.3em 0;
+  color: #5c5c5b;
+  position: relative;
+  text-decoration: none;
+}
+.snip1275 .agenda a:before,
+.snip1275 .agenda a:after {
+  height: 3px;
+  position: absolute;
+  content: '';
+  -webkit-transition: all 0.35s ease;
+  transition: all 0.35s ease;
+  background-color: #FAB529;
+  width: 0;
+}
+.snip1275 .active a:before,
+.snip1275 .active a:after {
+  height: 3px;
+  position: absolute;
+  content: '';
+  -webkit-transition: all 0.35s ease;
+  transition: all 0.35s ease;
+  background-color: #91A9C6;
+  width: 0;
+}
+
+.snip1275 .sport a:before,
+.snip1275 .sport a:after {
+  height: 3px;
+  position: absolute;
+  content: '';
+  -webkit-transition: all 0.35s ease;
+  transition: all 0.35s ease;
+  background-color: #EA5852;
+  width: 0;
+}
+
+.snip1275 .selftherapie a:before,
+.snip1275 .selftherapie a:after {
+  height: 3px;
+  position: absolute;
+  content: '';
+  -webkit-transition: all 0.35s ease;
+  transition: all 0.35s ease;
+  background-color: #F3A5AF;
+  width: 0;
+}
+.snip1275 .nature a:before,
+.snip1275 .nature a:after {
+  height: 3px;
+  position: absolute;
+  content: '';
+  -webkit-transition: all 0.35s ease;
+  transition: all 0.35s ease;
+  background-color: #94c674;
+  width: 0;
+}
+
+
+.snip1275 .bienetre a:before,
+.snip1275 .bienetre a:after {
+  height: 3px;
+  position: absolute;
+  content: '';
+  -webkit-transition: all 0.35s ease;
+  transition: all 0.35s ease;
+  background-color: #9a8dc1;
+  width: 0;
+}
+.snip1275 a:before {
+  top: 0;
+  right: 0;
+}
+.snip1275 a:after {
+  bottom: 0;
+  left: 0;
+}
+.snip1275 a:hover,
+.snip1275 .current a {
+  color:#5c5c5b ;
+}
+.snip1275 a:hover:before,
+.snip1275 .current a:before,
+.snip1275 a:hover:after,
+.snip1275 .current a:after {
+  width: 100%;
+}
+/*MENUS DEROULANTS*/
+.drop > li {
+    position :absolute;
+	font-size: 16px;
+	padding: 5px;
+	height: auto;
+	width: 155px;
+	background-color:#efefef;
+    opacity: 0.9;
+	text-align: center;
+
+}
+/*position des li des meunus déroulants---*/
+.drop > li:nth-child(2n){
+	padding-top: px;
+    margin-top: 40px;
+	
+}
+.drop > li:nth-child(3n){
+    margin-top: 80px;
+	
+}
+.drop > li:nth-child(4n){
+    margin-top: 120px;
+	
+}
+.selftherapie > ul {
+	opacity: 0;                     
+	position: absolute;
+    left: 1%;
+	top: 55px;                     
+	width: 100%; 
+	transition: all 1.5s;
+	z-index: 2;
+}
+.active > ul {
+	opacity: 0;                     
+	position: absolute; 
+    left:25% ;
+	top: 55px;                     
+	width: 100%; 
+	transition: all 1.5s;
+	z-index: 2;
+}
+.sport > ul {
+    opacity: 0;                     
+	position: absolute;
+    right: 40%;
+	top: 55px;                     
+	width: 100%; 
+	transition: all 1.5s;
+	z-index: 2;
+}
+
+/*
+.nature > ul {
+    opacity: 0;                     
+	position: absolute;
+    right: 1%;
+	top: 55px;                     
+	width: 100%; 
+	transition: all 1.5s;
+	z-index: 2;
+    
+}
+*/
+.bienetre > ul {
+    opacity: 0;                     
+	position: absolute;
+    right: 15%;
+	top: 55px;                     
+	width: 100%; 
+	transition: all 1.5s;
+	z-index: 2;
+}
+/*
+.agenda > ul{
+    opacity: 0;                     
+	position: absolute;
+    right: 1%;
+	top: 55px;                     
+	width: 100%; 
+	transition: all 1.5s;
+	z-index: 2;
+}
+*/
+nav li:hover > ul {                 
+	display: block; 
+	opacity: 1;
+}
+
+
+/*------VERSION MOBILE--------------*/	
+@media (min-width: 1290px){
+    .image{
+        margin: 25px;
+    }
+}
+
+@media (max-width: 959px)and(min-width: 6480px){
+	nav li{
+    font-size: 19px;
+	}
+/*
+	header h1, button { 
+    display: none; 
+}
+*/
+}
+
+@media (max-width: 479px){
+
+
+  header, main, footer {
+/*    width: 100%; */
+	margin-left: 0px;
+    margin-right: 0px;
+}
+header > div:first-of-type {
+	display: flex;
+}
+	
+
+header button {
+    display: block;
+    width: 50px;
+    height: 50px;
+    padding: 5px;
+    margin: 10px;
+    border: none;
+    background-color: transparent;
+}
+
+header button span {
+    color: #5c5c5b;
+/*	color:#FAB529;*/
+}
+nav li{
+    font-size: 16px;
+    width:45%;
+	}
+    
+nav {
+    border: 0px;
+    display: none;
+    position: absolute;
+/*    hauteur avant nav*/
+    top: 80px;
+    left: 0;
+    right: 0;
+}
+
+
+nav ul {
+    list-style-type: none;
+/*    couleur fond nav */
+    background-color: #efefef;
+    flex-direction: column;
+    opacity: 0.9;
+    align-items: center;
+    position: relative;
+    z-index: 9999;
+}
+    
+    
+    
+    
+
+.visible {
+    display: flex;
+}
+.hidden {
+    display: none;
+}
+   
+header>button,h1 { 
+    display: block;
+/*    margin-right: -5%;*/
+}
+nav ul {
+    display: block;
+}
+    
+    
+    
+    
+    
+    
+    
+    
+
+.drop > li:nth-child(2n){
+	padding-top: px;
+	margin-top: 35px;
+}
+
+.drop > li:nth-child(3n){
+	margin-top: 69px;
+}
+
+.drop > li:nth-child(4n){
+	margin-top: 107px;
+}
+
+.snip1275 > li:first-of-type{
+	padding-left: 0;
+}
+#logo{
+	display:none;
+}
+.drop > li{
+    background-color: #FAB529;
+    width: 150px;
+}
+.drop > li > a {
+    font-size: 15px;
+} 
+    
+.snip1275 > li{
+padding-top:20px;
+padding-bottom:20px;
+}
+nav ul{
+    padding-left: 15%;
+}
+
+    
+.active,.drop >li{
+    margin-right: 50%;
+    
+/*        margin-top: -15%;*/
+
+
+}
+
+/*
+	.sport,.drop >li{
+		margin-right: 50%;
+	}
+	.bienetre,.drop >li{
+		margin-right: 50%;
+	}
+	.selftherapie,.drop >li{
+		margin-right: 50%;
+	}
+*/
+    .snip1275 .agenda a:before,
+    .snip1275 .agenda a:after,
+    .snip1275 .active a:before,
+    .snip1275 .active a:after,
+    .snip1275 .sport a:before,
+    .snip1275 .sport a:after,
+    .snip1275 .bienetre a:before,
+    .snip1275 .bienetre a:after,
+    .snip1275 .selftherapie a:before,
+    .snip1275 .selftherapie a:after,
+    .snip1275 .nature a:before,
+    .snip1275 .nature a:after
+    {
+        visibility: hidden;
+    }
+    
+    
+.selftherapie > ul,.active > ul,.sport > ul,.bienetre > ul {
+	opacity: 0;                 position:absolute;
+    left: 105%;
+	top: 0px;                     
+}
+
+
+}		
+
+	
+        
+        
+	
+	
+
+   
+    
+	
+
+
+	
+
+	
+
+
+
+
+
+    
+
+
+	
+
+
+
+
+        
+	
+
+
+         
+
+
+	
+
+
+
+
+
+
+
+		
+
+	
+	
+	
+	
+
+	
+	
+	
+	
+	
+
+
+
+
+	
+
+
+	
+
+
+	
+    
+
+
+
+
