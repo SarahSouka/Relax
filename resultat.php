@@ -21,7 +21,7 @@ die();
 $sql = 'SELECT * FROM t_relax INNER JOIN t_rubriquerelax ON t_relax.id = t_rubriquerelax.idRelax 
         INNER JOIN t_rubrique ON t_rubriquerelax.idRubrique = t_rubrique.id';
 
-if (isset($_POST['choix']) && ($_POST['cp'])){
+if (isset($_POST['choix'])){
         $arrChoix = $_POST['choix'];
         for ($i=0; $i<count($arrChoix);$i++){
             $arrChoix[$i] = "'".$arrChoix[$i]."'";
@@ -30,8 +30,10 @@ if (isset($_POST['choix']) && ($_POST['cp'])){
         $sql = $sql. " WHERE activite IN (";
         $sql = $sql . implode ($arrChoix, ","); 
         $sql = $sql. ")";
-// $sql = $sql. " WHERE cp IN ";
-}
+  if (isset($_POST['cp']) && $_POST['cp'] != '') {
+      $sql = $sql. " AND cp = " . $_POST['cp'];
+  }
+};
 
 $sql = 
 $statement2 = $pdo->prepare($sql);
@@ -72,11 +74,65 @@ $listeRelax = $statement2->fetchAll(PDO::FETCH_ASSOC);
 </head>
 
 <body>
-  <header>
-  <?php
-       include("./nav.php");
-    ?>  
-    </header> 
+   <header>
+      		<div>
+			<nav>
+				<ul class="snip1275">
+					<li class="detente"><a href="detente.php">Détente</a>
+						<ul class="drop">
+							<li class="invisible"><a href="">Spa, Wellness</a></li>
+							<li class="invisible"><a href="">Massage</a></li>
+							<li class="invisible"><a href="">Lieux Insolites</a></li>
+						</ul>
+                    </li>
+					<li class="sport"><a href="#sport">Sport</a>
+					<ul class="drop">
+							<li class="invisible"><a href="">Yoga</a></li>
+							<li class="invisible"><a href="">Pilates</a></li>
+							<li class="invisible"><a href="">Tai-Chi</a></li>
+							<li class="invisible"><a href="">Qi Gong</a></li>
+						</ul>
+					</li>
+					
+					<li class="selftherapie"><a href="#self_therapie">Self-Thérapie</a>
+						<ul class="drop">
+							<li class="invisible"><a href="">Art-Thérapie</a></li>
+							<li class="invisible"><a href="">Méditation</a></li>
+						</ul>
+					</li>
+					
+					<li id="logo" class="invisible"><a href="accueil.html"><img src="./assets/logo3.png" width="125px" height="125px"></a>
+					</li>
+					
+					<li class="nature"><a href="nature.php">Nature</a>
+<!--
+						<ul class="drop">
+							<li class="invisible"><a href="">Lieux en extérieur</a></li>
+						</ul>		
+-->
+					</li>
+					
+					<li class="bienetre"><a href="#bien_etre">Bien-être</a>
+						<ul class="drop">
+							<li class="invisible"><a href="">Tips</a></li>
+							<li class="invisible"><a href="">Thé</a></li>
+							<li class="invisible"><a href="">Musique</a></li>
+						</ul>
+					</li>
+					
+					<li class="agenda"><a href="#agenda">Agenda</a>
+						<ul class="drop">
+<!--
+							<li class="invisible"><a href="">Retraites</a></li>
+							<li class="invisible"><a href="">Evènements</a></li>
+							<li class="invisible"><a href="">Page Facebook</a></li>
+-->
+						</ul>
+				    </li>
+				</ul>
+			</nav>
+		</div>
+  </header>
    <div id="boxImages">
    
 <?php
@@ -84,7 +140,10 @@ $listeRelax = $statement2->fetchAll(PDO::FETCH_ASSOC);
 //       while ($listeRelax = $statement2->fetch())
     {  
         echo '<div class="listeRelax">';
-        echo '<img class="image" src="./assets/image.jpg">' . '<button id="titre">' . $listeRelax[$i]['nom'] . '</button>' ;
+        
+        if ($listeRelax[$i]['activite'] == 'Détente'){
+        echo '<img class="image" src="./assets/image.jpg">' . '<button id="titredetente">' . $listeRelax[$i]['nom'] . '</button>' ;
+        };
         echo '<div class="texte">' 
             .  '<h3>' . $listeRelax[$i]['nom'] . '</h3>' 
             . '<p>' . '<img class="iconeadresse" src="./icones/map-marker-alt-solid.svg">' . $listeRelax[$i]['rue'] . ' à ' . $listeRelax[$i]['cp'] . ' ' . $listeRelax[$i]['commune'] . '<br>';
