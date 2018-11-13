@@ -9,11 +9,11 @@
         <link rel="stylesheet" href="./css/normalize.css">
         <link rel="stylesheet" href="./fontawesome-free-5.2.0-web/fontawesome-free-5.2.0-web/css/all.css">
         <link rel="stylesheet" href="./css/screen.css">
-        <!--<link rel="stylesheet" href="./css/form.css">-->
+<!--        <link rel="stylesheet" href="./css/form.css">-->
         <script src="./JS/hamburgerMenu.js"></script>
-     	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<!--     	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>-->
     </head> 
-<body>
+
 	<header>
           <div>
             <h1><a href="#accueil"><img src="./assets/logo2.svg" width="100px" height="100px" alt="" ></a></h1>
@@ -74,6 +74,4 @@
 				</ul>
 			</nav>
 		</div>
-	</header>
-    </body>
-</html>
+    </header>

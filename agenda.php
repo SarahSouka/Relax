@@ -10,16 +10,20 @@
         <link rel="stylesheet" href="./jquery-ui-1.12.1.custom/jquery-ui.css">
         <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
         <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<!--        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>-->
         
         <!-- CSS -->
         <link rel="stylesheet" href="./css/normalize.css">
         <link rel="stylesheet" href="./css/agenda.css">
-        <link rel="stylesheet" href="./css/style-media.css">
         <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
         <link rel="stylesheet" href="./css/font-awesome.min.css">
+        <link rel="stylesheet" href="./fontawesome-free-5.2.0-web/fontawesome-free-5.2.0-web/css/all.css">
         <link rel="stylesheet" href="./css/screen.css">
+        
+        <script src="./JS/hamburgerMenu.js"></script>
+     	
+     	
 
-    
 
         <!-- DATEPICKER -->
          <script>
@@ -105,19 +109,19 @@ for($i = 0; $i < count($reponse); $i++){
         
         '<div id="blocinfos">' .
         '<h4>' . $reponse[$i]['nom'] . '</h4>' .
-        '<p>' . $reponse[$i]['lieu'] . '</p>' .
-        '<ul>' .
+        '<p id="plieu">' . $reponse[$i]['lieu'] . '</p>' .
+        '<ul id="ulreponse">' .
         
-        '<li>' . '<img class="icones" src="./icones/map-marker-alt-solid.svg">'. $reponse[$i]['rue'] . '</li>' .
+        '<li class="lireponse">' . '<img class="icones" src="./icones/map-marker-alt-solid.svg">'. $reponse[$i]['rue'] . '</li>' .
         
-        '<li>' . $reponse[$i]['cp'] . ' ' . $reponse[$i]['commune'] . '</li>' ;
+        '<li class="lireponse">' . $reponse[$i]['cp'] . ' ' . $reponse[$i]['commune'] . '</li>' ;
     
     if ($reponse[$i]['mail'] > ' '){
-       echo '<li>' . '<img class="icones" src="./icones/envelope-solid.svg">'. $reponse[$i]['mail'] . '</li>' ;
+       echo '<li class="lireponse">' . '<img class="icones" src="./icones/envelope-solid.svg">'. $reponse[$i]['mail'] . '</li>' ;
     };
     
     if ($reponse[$i]['telephone'] > ' '){
-        echo '<li>' . '<img class="icones" src="./icones/phone-solid.svg">'. $reponse[$i]['telephone'] . '</li>' ;
+        echo '<li class="lireponse">' . '<img class="icones" src="./icones/phone-solid.svg">'. $reponse[$i]['telephone'] . '</li>' ;
     }
         
         
@@ -127,7 +131,7 @@ for($i = 0; $i < count($reponse); $i++){
     
     if ($reponse[$i]['web'] > ' '){
         echo '<img id="iconeweb" src="./icones/laptop-solid.svg">' .
-            '<a href="http://' . $reponse[$i]['web'] . '">' . $reponse[$i]['web'] . '</a>';
+            '<a id="aweb" href="http://' . $reponse[$i]['web'] . '">' . $reponse[$i]['web'] . '</a>';
     }
         
          echo
@@ -155,7 +159,7 @@ for($i = 0; $i < count($reponse); $i++){
             <form action="" method="post">
                 <div id="datepicker"></div>
                 <input type="hidden" name="date" value="">
-                <button>Go</button>
+                <button id="btncalendrier">Go</button>
             </form> 
         </div>
         
