@@ -181,6 +181,34 @@ background-color: rgba(252, 248, 251, 0.7);
     padding: 5px;
     border-bottom: 1px solid pink;
 }
+#titredivers {
+    background-color: rgba(252, 248, 251, 0.7);
+/*background-color: transparent;*/
+    font-family: 'Poppins', sans-serif;
+    color: #414141;
+    border: none;
+    width: 260px;
+    position: relative;
+    bottom: 45px;
+    left: 15px;
+    z-index: 1;
+    padding: 5px;
+    border-bottom: 1px solid yellow;
+}
+#titrenature{
+    background-color: rgba(252, 248, 251, 0.7);
+/*background-color: transparent;*/
+    font-family: 'Poppins', sans-serif;
+    color: #414141;
+    border: none;
+    width: 260px;
+    position: relative;
+    bottom: 45px;
+    left: 15px;
+    z-index: 1;
+    padding: 5px;
+    border-bottom: 1px solid green;
+}
 
 /*Icones */
 .iconetel {
