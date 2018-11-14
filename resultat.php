@@ -147,7 +147,7 @@ $listeRelax = $statement2->fetchAll(PDO::FETCH_ASSOC);
         else if ($listeRelax[$i]['activite'] == 'Sport'){
              echo '<img class="image" src="./assets/image.jpg">' . '<button id="titresport">' . $listeRelax[$i]['nom'] . '</button>' ;
             }
-        else if ($listeRelax[$i]['activite'] == 'Self-Thérapie'){
+        else if ($listeRelax[$i]['activite'] == 'Self-thérapie'){
              echo '<img class="image" src="./assets/image.jpg">' . '<button id="titretherapie">' . $listeRelax[$i]['nom'] . '</button>' ;
             }
         else if ($listeRelax[$i]['activite'] == 'Nature'){
