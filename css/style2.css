@@ -76,6 +76,7 @@ img{
     text-align: left;
     padding: 15px;
     margin: 15px;
+/* margin: 30px;*/
 /*    position: absolute;*/
     position: relative;
 /*    top:50% ;*/
@@ -135,8 +136,52 @@ background-color: rgba(252, 248, 251, 0.7);
     left: 15px;
     z-index: 1;
     padding: 5px;
+/*    border-bottom: 1px solid blue;*/
 /*    text-transform: uppercase;*/
 }
+#titredetente {
+    background-color: rgba(252, 248, 251, 0.7);
+/*background-color: transparent;*/
+    font-family: 'Poppins', sans-serif;
+    color: #414141;
+    border: none;
+    width: 260px;
+    position: relative;
+    bottom: 45px;
+    left: 15px;
+    z-index: 1;
+    padding: 5px;
+    border-bottom: 1px solid blue;
+}
+#titresport {
+    background-color: rgba(252, 248, 251, 0.7);
+/*background-color: transparent;*/
+    font-family: 'Poppins', sans-serif;
+    color: #414141;
+    border: none;
+    width: 260px;
+    position: relative;
+    bottom: 45px;
+    left: 15px;
+    z-index: 1;
+    padding: 5px;
+    border-bottom: 1px solid red;
+}
+#titretherapie {
+    background-color: rgba(252, 248, 251, 0.7);
+/*background-color: transparent;*/
+    font-family: 'Poppins', sans-serif;
+    color: #414141;
+    border: none;
+    width: 260px;
+    position: relative;
+    bottom: 45px;
+    left: 15px;
+    z-index: 1;
+    padding: 5px;
+    border-bottom: 1px solid pink;
+}
+
 /*Icones */
 .iconetel {
     width: 13px;
