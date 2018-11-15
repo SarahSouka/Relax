@@ -61,13 +61,19 @@ $listeRelax = $statement2->fetchAll(PDO::FETCH_ASSOC);
              echo '<img class="image" src="./assets/image.jpg">' . '<button id="titredivers">' . $listeRelax[$i]['nom'] . '</button>' ;
             } ;
         
-        echo '<div class="texte">' 
+       echo '<div class="texte">' 
             .  '<h3>' . $listeRelax[$i]['nom'] . '</h3>' 
-            . '<p>' . '<img class="iconeadresse" src="./icones/map-marker-alt-solid.svg">' . $listeRelax[$i]['rue'] . ' à ' . $listeRelax[$i]['commune'] . '<br>' 
-            . '<img class="iconeweb" src="./icones/laptop-solid.svg">' . '<a id="lien" href="http://' . $listeRelax[$i]['web'] .  '"/>' . $listeRelax[$i]['web'] . '</a>'
-            . '<br>' 
-            . '<img class="iconetel" src="./icones/phone-solid.svg">' . $listeRelax[$i]['telephone'] . '<br>' 
-            . '<img class="iconemail" src="./icones/envelope-solid.svg">' . $listeRelax[$i]['mail'] . '</p>';
+            . '<p>' . '<img class="iconeadresse" src="./icones/map-marker-alt-solid.svg">' . $listeRelax[$i]['rue'] . ' à ' . $listeRelax[$i]['cp'] . ' ' . $listeRelax[$i]['commune'] . '<br>';
+        if ($listeRelax[$i]['web'] > ' '){
+            echo '<img class="iconeweb" src="./icones/laptop-solid.svg">' . '<a id="lien" href="http://' . $listeRelax[$i]['web'] . '"/>' . $listeRelax[$i]['web'] . '</a>';
+        };
+        if ($listeRelax[$i]['telephone'] > ' '){
+            echo '<br>' 
+            . '<img class="iconetel" src="./icones/phone-solid.svg">' . $listeRelax[$i]['telephone'] . '<br>';
+        };
+        if ($listeRelax[$i]['mail'] > ' '){
+            echo '<img class="iconemail" src="./icones/envelope-solid.svg">' . $listeRelax[$i]['mail'] . '</p>';
+        };
     
         echo '</div>';
         echo '</div>';
