@@ -53,12 +53,12 @@
 </head>
 
 <body>
-   
+   <header>
     <!-- NAV -->
    <?php
        include("./nav.php");
     ?>   
-		
+	</header>	
 	
     
   <div id="box">
