@@ -9,7 +9,7 @@
         <link rel="stylesheet" href="./css/normalize.css">
         <link rel="stylesheet" href="./css/screen.css">
         <link rel="stylesheet" href="./css/form.css">
-
+</head>
  
 <body>
 	<header>
