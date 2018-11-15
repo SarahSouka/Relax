@@ -74,65 +74,9 @@ $listeRelax = $statement2->fetchAll(PDO::FETCH_ASSOC);
 </head>
 
 <body>
-   <header>
-      		<div>
-			<nav>
-				<ul class="snip1275">
-					<li class="detente"><a href="detente.php">Détente</a>
-						<ul class="drop">
-							<li class="invisible"><a href="">Spa, Wellness</a></li>
-							<li class="invisible"><a href="">Massage</a></li>
-							<li class="invisible"><a href="">Lieux Insolites</a></li>
-						</ul>
-                    </li>
-					<li class="sport"><a href="#sport">Sport</a>
-					<ul class="drop">
-							<li class="invisible"><a href="">Yoga</a></li>
-							<li class="invisible"><a href="">Pilates</a></li>
-							<li class="invisible"><a href="">Tai-Chi</a></li>
-							<li class="invisible"><a href="">Qi Gong</a></li>
-						</ul>
-					</li>
-					
-					<li class="selftherapie"><a href="#self_therapie">Self-Thérapie</a>
-						<ul class="drop">
-							<li class="invisible"><a href="">Art-Thérapie</a></li>
-							<li class="invisible"><a href="">Méditation</a></li>
-						</ul>
-					</li>
-					
-					<li id="logo" class="invisible"><a href="accueil.html"><img src="./assets/logo3.png" width="125px" height="125px"></a>
-					</li>
-					
-					<li class="nature"><a href="nature.php">Nature</a>
-<!--
-						<ul class="drop">
-							<li class="invisible"><a href="">Lieux en extérieur</a></li>
-						</ul>		
--->
-					</li>
-					
-					<li class="bienetre"><a href="#bien_etre">Bien-être</a>
-						<ul class="drop">
-							<li class="invisible"><a href="">Tips</a></li>
-							<li class="invisible"><a href="">Thé</a></li>
-							<li class="invisible"><a href="">Musique</a></li>
-						</ul>
-					</li>
-					
-					<li class="agenda"><a href="#agenda">Agenda</a>
-						<ul class="drop">
-<!--
-							<li class="invisible"><a href="">Retraites</a></li>
-							<li class="invisible"><a href="">Evènements</a></li>
-							<li class="invisible"><a href="">Page Facebook</a></li>
--->
-						</ul>
-				    </li>
-				</ul>
-			</nav>
-		</div>
-  </header>
+   <?php
+        include("./nav.php");
+    ?>
    <div id="boxImages">
    
 <?php
