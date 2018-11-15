@@ -20,7 +20,7 @@ header > div {
     padding: 0px;
     margin: 0;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     flex-direction: row;
     align-items: center;
 }

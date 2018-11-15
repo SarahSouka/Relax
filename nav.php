@@ -16,7 +16,7 @@
 
 	<header>
           <div>
-            <h1><a href="#accueil"><img src="./assets/logo2.svg" width="100px" height="100px" alt="" ></a></h1>
+            <h1><a href="#accueil"><img src="./assets/logo2.svg" width="100px" height="auto" alt="" ></a></h1>
             <button><span class="fas fa-bars fa-2x"></span></button>
         </div>  
 
@@ -47,7 +47,7 @@
 						</ul>
 					</li>
 					
-					<li id="logo" class="invisible"><a href="#accueil"><img src="./assets/logo3.png" width="125px" height="125px" alt=""></a>
+					<li id="logo" class="invisible"><a href="#accueil"><img src="./assets/logo3.png" width="100%" height="auto" alt=""></a>
 					</li>
 					
 					<li class="nature"><a href="#nature">Nature</a>
