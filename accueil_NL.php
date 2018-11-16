@@ -9,14 +9,73 @@
         <link rel="stylesheet" href="./css/normalize.css">
         <link rel="stylesheet" href="./css/screen.css">
         <link rel="stylesheet" href="./css/form.css">
+        <script src="./JS/hamburgerMenu.js"></script>
+        <link rel="stylesheet" href="./fontawesome-free-5.2.0-web/fontawesome-free-5.2.0-web/css/all.css">
 </head>
  
 <body>
+
 	<header>
-    <?php
-       include("./nav.php");
-    ?> 
-	</header>
+          <div>
+            <h1><a href="#accueil"><img src="./assets/logo2.png"  alt="" ></a></h1>
+            <button><span class="fas fa-bars fa-2x"></span></button>
+        </div>  
+
+	
+		<div>
+			<nav>
+				<ul class="snip1275">
+					<li class="active"><a href="#detente">Ontspanning</a>
+						<ul class="drop">
+							<li class="invisible"><a href="">Spa, Wellness</a></li>
+							<li class="invisible"><a href="">Massage</a></li>
+							<li class="invisible"><a href="">Atipische plaatsen</a></li>
+						</ul>
+                    </li>
+					<li class="sport"><a href="#sport">Sport</a>
+					<ul class="drop">
+							<li class="invisible"><a href="">Yoga</a></li>
+							<li class="invisible"><a href="">Pilates</a></li>
+							<li class="invisible"><a href="">Tai-Chi</a></li>
+							<li class="invisible"><a href="">Qi Gong</a></li>
+						</ul>
+					</li>
+					
+					<li class="selftherapie"><a href="#self_therapie">Self-Therapy</a>
+						<ul class="drop">
+							<li class="invisible"><a href="">Kunst</a></li>
+							<li class="invisible"><a href="">Meditatie</a></li>
+						</ul>
+					</li>
+					
+					<li id="logo" class="invisible"><a href="accueil_FR.php"><img src="./assets/logo3.png"  alt=""></a>
+					</li>
+					
+					<li class="nature"><a href="#nature">Natuur</a>
+						<!-- <ul class="drop">
+						    <li class="invisible"><a href="">Lieux en extérieur</a></li>
+						</ul>	 -->	
+					</li>
+					
+					<li class="bienetre"><a href="#bien_etre">Welzijn</a>
+						<ul class="drop">
+							<li class="invisible"><a href="">Tips</a></li>
+							<li class="invisible"><a href="">Thee</a></li>
+							<li class="invisible"><a href="">Muziek</a></li>
+						</ul>
+					</li>
+					
+					<li class="agenda"><a href="agenda.php">Agenda</a>
+						<!-- <ul class="drop">
+						    <li class="invisible"><a href="">Retraites</a></li>
+						    <li class="invisible"><a href="">Evènements</a></li>
+						    <li class="invisible"><a href="">Page Facebook</a></li>
+						</ul> -->
+				    </li>
+				</ul>
+			</nav>
+		</div>
+    </header>
 	<!--  <img src="assets/fond.svg" alt="pissenlit"  width="700px" /> -->
 	        <div id="choix">
                 <form id="myForm" name="myForm" method="POST" action="resultat.php">
@@ -115,3 +174,10 @@
 	    </nav>
 	</footer>
 </body>
+	
+
+
+   
+
+
+	
