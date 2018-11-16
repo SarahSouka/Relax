@@ -54,16 +54,20 @@
                 </div>
                     <div id="checkbox">
                         <label for="Nature"><span></span>Bol d'air frais</label><input type="checkbox" name="choix[]" value="Nature"  /><br /> 
-                        <label for="Sport"><span></span>Se défouler</label><input type="checkbox" name="choix[]" value="Sport" /><br /> 
-                        <label for="Détente"><span></span>Se relaxer</label><input type="checkbox" name="choix[]" value="Détente" /><br /> 
-                        <label for="Self-thérapie"><span></span>Se retrouver avec soi-même</label><input type="checkbox" name="choix[]" value="Self-thérapie" /><br /> 
+                        <label for="Sport"><span></span>Se défouler</label><input type="checkbox" name="choix[]"  value="Yoga" data-valuetwo="Pilate" /><br /> 
+                        <label for="Détente"><span></span>Se relaxer</label><input type="checkbox" name="choix[]"  value="Massage" value="Spa" /><br /> 
+                        <label for="Méditation"><span></span>Se retrouver avec soi-même</label><input type="checkbox" name="choix[]" value="Méditation" /><br /> 
                         <label for="Art-Thérapie"><span></span>Envie de créer</label><input type="checkbox" name="choix[]" value="Art-Thérapie" />
                     </div>
                         <input type="submit" value="envoyer" id="button">
                 </form>
             </div>
 
-            
+            <script>
+                //var valuetwo = checkbox.getAttribute("data-valuetwo");
+                var valueTwo = $( "input" ).attr( "data-valuetwo" ); 
+                //alert(valueTwo);
+            </script>
            
 <!--             
             height="581px" -->

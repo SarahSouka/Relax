@@ -18,37 +18,16 @@
         <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
         <link rel="stylesheet" href="./css/font-awesome.min.css">
         <link rel="stylesheet" href="./fontawesome-free-5.2.0-web/fontawesome-free-5.2.0-web/css/all.css">
-        <link rel="stylesheet" href="./css/screen.css">
+        <!--<link rel="stylesheet" href="./css/screen.css">-->
         
+<!--
         <script src="./JS/hamburgerMenu.js"></script>
+-->
      	
      	
 
 
-        <!-- DATEPICKER -->
-         <script>
-          $(document).ready(function() {
-            $( "#datepicker" ).datepicker({
-                firstDay: 1,
-                dayNamesMin: [ "Di", "Lu", "Ma", "Me", "Je", "Ve", "Sa" ], 
-                minDate: new Date(),
-                dateFormat: "yy-mm-dd",
-                onSelect: function(dateText) {
-                    $('input[type="hidden"]').val(dateText)
-                }
-            });
-          });
-        </script>
         
-        <!-- PLUG IN FACEBOOK -->
-        <div id="fb-root"></div>
-            <script>(function(d, s, id) {
-              var js, fjs = d.getElementsByTagName(s)[0];
-              if (d.getElementById(id)) return;
-              js = d.createElement(s); js.id = id;
-              js.src = 'https://connect.facebook.net/fr_FR/sdk.js#xfbml=1&version=v3.2';
-              fjs.parentNode.insertBefore(js, fjs);
-            }(document, 'script', 'facebook-jssdk'));</script>
         
 </head>
 
@@ -174,7 +153,30 @@ for($i = 0; $i < count($reponse); $i++){
    
     </div>
     
-
+<!-- DATEPICKER -->
+         <script>
+          $(document).ready(function() {
+            $( "#datepicker" ).datepicker({
+                firstDay: 1,
+                dayNamesMin: [ "Di", "Lu", "Ma", "Me", "Je", "Ve", "Sa" ], 
+                minDate: new Date(),
+                dateFormat: "yy-mm-dd",
+                onSelect: function(dateText) {
+                    $('input[type="hidden"]').val(dateText)
+                }
+            });
+          });
+        </script>
+        
+        <!-- PLUG IN FACEBOOK -->
+        <div id="fb-root"></div>
+            <script>(function(d, s, id) {
+              var js, fjs = d.getElementsByTagName(s)[0];
+              if (d.getElementById(id)) return;
+              js = d.createElement(s); js.id = id;
+              js.src = 'https://connect.facebook.net/fr_FR/sdk.js#xfbml=1&version=v3.2';
+              fjs.parentNode.insertBefore(js, fjs);
+            }(document, 'script', 'facebook-jssdk'));</script>
 
 </body>
 </html>
