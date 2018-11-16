@@ -80,7 +80,7 @@
 	        <div id="choix">
                 <form id="myForm" name="myForm" method="POST" action="resultat.php">
                 
-                <h1>Momantary fancies...</h1>
+                <h1>Momentary fancies...</h1>
                 
                 <div id="alentours">
                     <label for="commune" class="custom-select">In the surroundings of...</label>
