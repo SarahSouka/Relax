@@ -87,15 +87,7 @@ $listerubrique = $statement3->fetchAll(PDO::FETCH_ASSOC);
             $listeRelax[$i]['activite'] == 'Lieu Insolite' ){
              echo '<img class="image" src="./photos/'.$listeRelax[$i]['idRR'] .'.jpg">' . '<button id="titredetente">' . $listeRelax[$i]['nom'] . '</button>' ;
         }
-        /*else if ($listeRelax[$i]['activite'] == 'Massage'){
-             echo '<img class="image" src="./photos/'.$listeRelax[$i]['idRR'] .'.jpg">' . '<button id="titredetente">' . $listeRelax[$i]['nom'] . '</button>' ;
-            }
-        else if ($listeRelax[$i]['activite'] == 'Spa'){
-             echo '<img class="image" src="./photos/'.$listeRelax[$i]['idRR'] .'.jpg">' . '<button id="titredetente">' . $listeRelax[$i]['nom'] . '</button>' ;
-            }*/
-        /*else if ($listeRelax[$i]['activite'] == 'Lieu Insolite'){
-             echo '<img class="image" src="./photos/'.$listeRelax[$i]['idRR'] .'.jpg">' . '<button id="titredetente">' . $listeRelax[$i]['nom'] . '</button>' ;
-            }*/
+     
         else if ($listeRelax[$i]['activite'] == 'Sport' || 
                  $listeRelax[$i]['activite'] == 'Yoga' || 
                  $listeRelax[$i]['activite'] == 'Aikido' || 
