@@ -64,7 +64,7 @@
 						</ul>
 					</li>
 					
-					<li class="agenda"><a href="#agenda">Agenda</a>
+					<li class="agenda"><a href="agenda.php">Agenda</a>
 						<!-- <ul class="drop">
 						    <li class="invisible"><a href="">Retraites</a></li>
 						    <li class="invisible"><a href="">Evènements</a></li>
