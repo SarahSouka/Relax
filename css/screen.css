@@ -70,7 +70,8 @@ nav li{
 }
 #logo img{
     margin: -15px;
-	size : 113%;
+	width: 125px;
+    height: 125px;
 }
 .snip1275 .invisible a:before,
 .snip1275 .invisible a:after{
@@ -283,7 +284,9 @@ footer nav{
 }
 footer nav li{
 	font-size: 16px;
-	
+}	
+footer nav ul{
+    width: 76px;
 }	
 
 /*------VERSION MOBILE--------------*/	
