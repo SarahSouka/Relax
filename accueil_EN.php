@@ -118,7 +118,7 @@
                         <label for="Self-thérapie"><span></span>To find back oneself</label><input type="checkbox" name="choix[]" value="Self-thérapie" /><br /> 
 						<label for="Art-Thérapie"><span></span>To create something</label><input type="checkbox" name="choix[]" value="Art-Thérapie" />
                     </div>
-                        <input type="submit" value="envoyer" id="button">
+                        <input type="submit" value="Send" id="button">
                 </form>
             </div>
 
