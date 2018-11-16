@@ -21,43 +21,43 @@
 	        <div id="choix">
                 <form id="myForm" name="myForm" method="POST" action="resultat.php">
                 
-                <h1>Envies du moment...</h1>
+                <h1>Zin in...</h1>
                 
                 <div id="alentours">
-                    <label for="commune" class="custom-select">Aux alentours de...</label>
+                    <label for="commune" class="custom-select">In de omgeving van...</label>
                     <select name="cp" id="cp">
-                        <option value="">Commune</option>
-                        <option value="1000">1000 - Bruxelles</option>
+                        <option value="">Gemeente</option>
+                        <option value="1000">1000 - Brussel</option>
                         <option value="1020">1020 - Laeken</option>
-                        <option value="1030">1030 - Schaerbeek</option>
+                        <option value="1030">1030 - Schaarbeek</option>
                         <option value="1040">1040 - Etterbeek</option>
-                        <option value="1050">1050 - Ixelles</option>
-                        <option value="1060">1060 - Saint-Gilles</option>
+                        <option value="1050">1050 - Elsene</option>
+                        <option value="1060">1060 - Sint-Gillis</option>
                         <option value="1070">1070 - Anderlecht</option>
-                        <option value="1080">1080 - Molenbeek</option>
+                        <option value="1080">1080 - Sint-Jans-Molenbeek</option>
                         <option value="1081">1081 - Koekelberg</option>
-                        <option value="1082">1082 - Berchem-Sainte-Agathe</option>
+                        <option value="1082">1082 - Sint-Agatha-Berchem</option>
                         <option value="1083">1083 - Ganshoren</option>
                         <option value="1090">1090 - Jette</option>
                         <option value="1120">1120 - Neder-Over-Heembeek</option>
                         <option value="1130">1130 - Haren</option>
                         <option value="1140">1140 - Evere</option>
-                        <option value="1150">1150 - Woluwe-Saint-Pierre</option>
-                        <option value="1160">1160 - Auderghem</option>
-                        <option value="1170">1170 - Watermael-Boitsfort</option>
-                        <option value="1180">1180 - Uccle</option>
-                        <option value="1190">1190 - Forest</option>
-                        <option value="1200">1200 - Woluwe-Saint-Lambert</option>
-                        <option value="1210">1210 - Saint-Josse-Ten-Noode</option>
+                        <option value="1150">1150 - Sint-Pieters-Woluwe</option>
+                        <option value="1160">1160 - Ouderghem</option>
+                        <option value="1170">1170 - Watermaal-Bosvoorde</option>
+                        <option value="1180">1180 - Ukkel</option>
+                        <option value="1190">1190 - Vorst</option>
+                        <option value="1200">1200 - Sint-Lambrechts-Woluwe</option>
+                        <option value="1210">1210 - Sint-Joost-ten-Node</option>
                         <br>
                     </select>
                 </div>
                     <div id="checkbox">
-                        <label for="Nature"><span></span>Bol d'air frais</label><input type="checkbox" name="choix[]" value="Nature"  /><br /> 
-                        <label for="Sport"><span></span>Se défouler</label><input type="checkbox" name="choix[]" value="Sport" /><br /> 
-                        <label for="Détente"><span></span>Se relaxer</label><input type="checkbox" name="choix[]" value="Détente" /><br /> 
-                        <label for="Self-thérapie"><span></span>Se retrouver avec soi-même</label><input type="checkbox" name="choix[]" value="Self-thérapie" /><br /> 
-                        <label for="Art-Thérapie"><span></span>Envie de créer</label><input type="checkbox" name="choix[]" value="Art-Thérapie" />
+                        <label for="Nature"><span></span>Een beetje frisse lucht te halen</label><input type="checkbox" name="choix[]" value="Nature"  /><br /> 
+                        <label for="Sport"><span></span>Om stoom af te blazen</label><input type="checkbox" name="choix[]" value="Sport" /><br /> 
+                        <label for="Détente"><span></span>Om zich te ontspannen</label><input type="checkbox" name="choix[]" value="Détente" /><br /> 
+                        <label for="Self-thérapie"><span></span>Om zichzelf terug te vinden</label><input type="checkbox" name="choix[]" value="Self-thérapie" /><br /> 
+                        <label for="Art-Thérapie"><span></span>Zin om iets te crééren</label><input type="checkbox" name="choix[]" value="Art-Thérapie" />
                     </div>
                         <input type="submit" value="envoyer" id="button">
                 </form>
@@ -104,5 +104,14 @@
             </script> -->
 
 	
-	<footer><p> &copy; Bénédicte Regnier, Floriane Jacques, Sarah Gueye, Cindy Colin - Interface 3</p></footer>
+	<footer>
+	<p> &copy; Bénédicte Regnier, Floriane Jacques, Sarah Gueye, Cindy Colin - Interface 3</p>
+	  <nav>
+	        <ul>
+	            <li><a href="accueil_FR.php"> FR |</a></li>
+	            <li><a href="accueil_NL.php"> NL |</a></li>
+	            <li><a href="accueil_EN.php"> EN </a></li>
+	        </ul>
+	    </nav>
+	</footer>
 </body>
