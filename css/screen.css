@@ -273,7 +273,8 @@ nav li:hover > ul {
  footer {
 	display: flex;
     width: 100%;    
-    padding: 80px;
+    padding-right: 80px;
+    padding-left: 80px;
     margin: 0;
 	justify-content: space-between;
     flex-direction: row;

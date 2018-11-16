@@ -60,7 +60,7 @@
 					<li class="bienetre"><a href="#bien_etre">Wel-beeing</a>
 						<ul class="drop">
 							<li class="invisible"><a href="">Tips</a></li>
-							<li class="invisible"><a href="">Thea</a></li>
+							<li class="invisible"><a href="">Tea</a></li>
 							<li class="invisible"><a href="">Music</a></li>
 						</ul>
 					</li>
@@ -167,7 +167,7 @@
 	<p> &copy; Bénédicte Regnier, Floriane Jacques, Sarah Gueye, Cindy Colin - Interface 3</p>
 	  <nav>
 	        <ul>
-	          <li><a href="accueil_FR.php"> FR |</a></li>
+	            <li><a href="accueil_FR.php"> FR |</a></li>
 	            <li><a href="accueil_NL.php"> NL |</a></li>
 	            <li><a href="accueil_EN.php"> EN </a></li> 
 	        </ul>
