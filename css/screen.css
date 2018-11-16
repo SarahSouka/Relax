@@ -72,7 +72,8 @@ nav li{
 }
 #logo img{
     margin: -15px;
-	size : 113%;
+	width: 125px;
+    height: 125px;
 }
 .snip1275 .invisible a:before,
 .snip1275 .invisible a:after{
@@ -274,7 +275,8 @@ nav li:hover > ul {
  footer {
 	display: flex;
     width: 100%;    
-    padding: 80px;
+    padding-right: 80px;
+    padding-left: 80px;
     margin: 0;
 	justify-content: space-between;
     flex-direction: row;
@@ -285,7 +287,9 @@ footer nav{
 }
 footer nav li{
 	font-size: 16px;
-	
+}	
+footer nav ul{
+    width: 76px;
 }	
 
 /*------VERSION MOBILE--------------*/	

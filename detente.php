@@ -53,23 +53,22 @@ $listeRelax = $statement2->fetchAll(PDO::FETCH_ASSOC);
     {  
         echo '<div class="listeRelax">';
         
-        if ($listeRelax[$i]['activite'] == 'Détente'){
-             echo '<img class="image" src="./assets/image.jpg">' . '<button id="titredetente">' . $listeRelax[$i]['nom'] . '</button>' ;
-        }
-        else if ($listeRelax[$i]['activite'] == 'Sport'){
-             echo '<img class="image" src="./assets/image.jpg">' . '<button id="titresport">' . $listeRelax[$i]['nom'] . '</button>' ;
+        /*if ($listeRelax[$i]['activite'] == 'Détente'){
+             echo '<img class="image" src="./photos/'. $listeRelax[$i]['idRR'] .'.jpg">' . '<button id="titredetente">' . $listeRelax[$i]['nom'] . '</button>' ;
+        }*/
+        if ($listeRelax[$i]['activite'] == 'Massage'){
+             echo '<img class="image" src="./photos/'.$listeRelax[$i]['idRR'] .'.jpg">' . '<button id="titredetente">' . $listeRelax[$i]['nom'] . '</button>' ;
             }
-        else if ($listeRelax[$i]['activite'] == 'Self-Thérapie'){
-             echo '<img class="image" src="./assets/image.jpg">' . '<button id="titretherapie">' . $listeRelax[$i]['nom'] . '</button>' ;
+        else if ($listeRelax[$i]['activite'] == 'Spa'){
+             echo '<img class="image" src="./photos/'.$listeRelax[$i]['idRR'] .'.jpg">' . '<button id="titredetente">' . $listeRelax[$i]['nom'] . '</button>' ;
             }
-        else if ($listeRelax[$i]['activite'] == 'Nature'){
-             echo '<img class="image" src="./assets/image.jpg">' . '<button id="titrenature">' . $listeRelax[$i]['nom'] . '</button>' ;
-            }
+        
         else {
-             echo '<img class="image" src="./assets/image.jpg">' . '<button id="titredivers">' . $listeRelax[$i]['nom'] . '</button>' ;
+             echo '<img class="image" src="./photos/'.$listeRelax[$i]['idRR'] .'.jpg">' . '<button id="titredetente">' . $listeRelax[$i]['nom'] . '</button>' ;
             } ;
         
-         echo '<div class="texte">' 
+        
+        echo '<div class="texte">' 
             .  '<h3>' . $listeRelax[$i]['nom'] . '</h3>' 
             . '<p>' . '<img class="iconeadresse" src="./icones/map-marker-alt-solid.svg">' . $listeRelax[$i]['rue'] . ' à ' . $listeRelax[$i]['cp'] . ' ' . $listeRelax[$i]['commune'] . '<br>';
         if ($listeRelax[$i]['web'] > ' '){

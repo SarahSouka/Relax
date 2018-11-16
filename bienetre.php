@@ -11,6 +11,10 @@
        include("./nav.php");
     ?>   
 	</header>
+   
+   <main>
+       
+   </main>
     
 </body>
 </html>

@@ -9,22 +9,81 @@
         <link rel="stylesheet" href="./css/normalize.css">
         <link rel="stylesheet" href="./css/screen.css">
         <link rel="stylesheet" href="./css/form.css">
+        <script src="./JS/hamburgerMenu.js"></script>
+        <link rel="stylesheet" href="./fontawesome-free-5.2.0-web/fontawesome-free-5.2.0-web/css/all.css">
 </head>
  
 <body>
+
 	<header>
-    <?php
-       include("./nav.php");
-    ?> 
-	</header>
+          <div>
+            <h1><a href="#accueil"><img src="./assets/logo2.png"  alt="" ></a></h1>
+            <button><span class="fas fa-bars fa-2x"></span></button>
+        </div>  
+
+	
+		<div>
+			<nav>
+				<ul class="snip1275">
+					<li class="active"><a href="#detente">Relaxation</a>
+						<ul class="drop">
+							<li class="invisible"><a href="">Spa, Wellness</a></li>
+							<li class="invisible"><a href="">Massage</a></li>
+							<li class="invisible"><a href="">Breathtaking places</a></li>
+						</ul>
+                    </li>
+					<li class="sport"><a href="#sport">Sport</a>
+					<ul class="drop">
+							<li class="invisible"><a href="">Yoga</a></li>
+							<li class="invisible"><a href="">Pilates</a></li>
+							<li class="invisible"><a href="">Tai-Chi</a></li>
+							<li class="invisible"><a href="">Qi Gong</a></li>
+						</ul>
+					</li>
+					
+					<li class="selftherapie"><a href="#self_therapie">Self-Therapy</a>
+						<ul class="drop">
+							<li class="invisible"><a href="">Art</a></li>
+							<li class="invisible"><a href="">Meditation</a></li>
+						</ul>
+					</li>
+					
+					<li id="logo" class="invisible"><a href="accueil_FR.php"><img src="./assets/logo3.png"  alt=""></a>
+					</li>
+					
+					<li class="nature"><a href="#nature">Nature</a>
+						<!-- <ul class="drop">
+						    <li class="invisible"><a href="">Lieux en extérieur</a></li>
+						</ul>	 -->	
+					</li>
+					
+					<li class="bienetre"><a href="#bien_etre">Wel-beeing</a>
+						<ul class="drop">
+							<li class="invisible"><a href="">Tips</a></li>
+							<li class="invisible"><a href="">Tea</a></li>
+							<li class="invisible"><a href="">Music</a></li>
+						</ul>
+					</li>
+					
+					<li class="agenda"><a href="agenda.php">Agenda</a>
+						<!-- <ul class="drop">
+						    <li class="invisible"><a href="">Retraites</a></li>
+						    <li class="invisible"><a href="">Evènements</a></li>
+						    <li class="invisible"><a href="">Page Facebook</a></li>
+						</ul> -->
+				    </li>
+				</ul>
+			</nav>
+		</div>
+    </header>
 	<!--  <img src="assets/fond.svg" alt="pissenlit"  width="700px" /> -->
 	        <div id="choix">
                 <form id="myForm" name="myForm" method="POST" action="resultat.php">
                 
-                <h1>Zin om...</h1>
+                <h1>Momentary fancies...</h1>
                 
                 <div id="alentours">
-                    <label for="commune" class="custom-select">In de omgeving van...</label>
+                    <label for="commune" class="custom-select">In the surroundings of...</label>
                     <select name="cp" id="cp">
                         <option value="">Commune</option>
                         <option value="1000">1000 - Bruxelles</option>
@@ -53,11 +112,11 @@
                     </select>
                 </div>
                     <div id="checkbox">
-                        <label for="Nature"><span></span>Een beetje frisse lucht te halen</label><input type="checkbox" name="choix[]" value="Nature"  /><br /> 
-                        <label for="Sport"><span></span>Om stoom af te blaze</label><input type="checkbox" name="choix[]" value="Sport" /><br /> 
-                        <label for="Détente"><span></span>Om zich te ontspannen</label><input type="checkbox" name="choix[]" value="Détente" /><br /> 
-                        <label for="Self-thérapie"><span></span>Om zichzelf terug te vinden</label><input type="checkbox" name="choix[]" value="Self-thérapie" /><br /> 
-						<label for="Art-Thérapie"><span></span>Zin om iets te crééren</label><input type="checkbox" name="choix[]" value="Art-Thérapie" />
+                        <label for="Nature"><span></span>To breathe fresh air</label><input type="checkbox" name="choix[]" value="Nature"  /><br /> 
+                        <label for="Sport"><span></span>To blow of steam</label><input type="checkbox" name="choix[]" value="Sport" /><br /> 
+                        <label for="Détente"><span></span>To release the stress and relax</label><input type="checkbox" name="choix[]" value="Détente" /><br /> 
+                        <label for="Self-thérapie"><span></span>To find back oneself</label><input type="checkbox" name="choix[]" value="Self-thérapie" /><br /> 
+						<label for="Art-Thérapie"><span></span>To create something</label><input type="checkbox" name="choix[]" value="Art-Thérapie" />
                     </div>
                         <input type="submit" value="envoyer" id="button">
                 </form>
@@ -108,9 +167,9 @@
 	<p> &copy; Bénédicte Regnier, Floriane Jacques, Sarah Gueye, Cindy Colin - Interface 3</p>
 	  <nav>
 	        <ul>
-	            <li><a href="accueil_FR.php">FR|</a></li>
-	            <li><a href="accueil_NL.php">NL|</a></li>
-	            <li><a href="accueil_EN.php">EN </a></li>
+	            <li><a href="accueil_FR.php"> FR |</a></li>
+	            <li><a href="accueil_NL.php"> NL |</a></li>
+	            <li><a href="accueil_EN.php"> EN </a></li> 
 	        </ul>
 	    </nav>
 	</footer>
