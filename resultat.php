@@ -81,21 +81,14 @@ $listerubrique = $statement3->fetchAll(PDO::FETCH_ASSOC);
     {  
         echo '<div class="listeRelax">';
         
+
         if ($listeRelax[$i]['activite'] == 'Détente' || 
             $listeRelax[$i]['activite'] == 'Massage' || 
             $listeRelax[$i]['activite'] == 'Spa' || 
             $listeRelax[$i]['activite'] == 'Lieu Insolite' ){
              echo '<img class="image" src="./photos/'.$listeRelax[$i]['idRR'] .'.jpg">' . '<button id="titredetente">' . $listeRelax[$i]['nom'] . '</button>' ;
         }
-        /*else if ($listeRelax[$i]['activite'] == 'Massage'){
-             echo '<img class="image" src="./photos/'.$listeRelax[$i]['idRR'] .'.jpg">' . '<button id="titredetente">' . $listeRelax[$i]['nom'] . '</button>' ;
-            }
-        else if ($listeRelax[$i]['activite'] == 'Spa'){
-             echo '<img class="image" src="./photos/'.$listeRelax[$i]['idRR'] .'.jpg">' . '<button id="titredetente">' . $listeRelax[$i]['nom'] . '</button>' ;
-            }*/
-        /*else if ($listeRelax[$i]['activite'] == 'Lieu Insolite'){
-             echo '<img class="image" src="./photos/'.$listeRelax[$i]['idRR'] .'.jpg">' . '<button id="titredetente">' . $listeRelax[$i]['nom'] . '</button>' ;
-            }*/
+     
         else if ($listeRelax[$i]['activite'] == 'Sport' || 
                  $listeRelax[$i]['activite'] == 'Yoga' || 
                  $listeRelax[$i]['activite'] == 'Aikido' || 
@@ -115,7 +108,11 @@ $listerubrique = $statement3->fetchAll(PDO::FETCH_ASSOC);
         
         else if ($listeRelax[$i]['activite'] == 'Nature'){
              echo '<img class="image" src="./photos/'.$listeRelax[$i]['idRR'] .'.jpg">' . '<button id="titrenature">' . $listeRelax[$i]['nom'] . '</button>' ;
+
             }
+      
+        
+        
         else {
              echo '<img class="image" src="./photos/'.$listeRelax[$i]['idRR'] .'.jpg">' . '<button id="titredivers">' . $listeRelax[$i]['nom'] . '</button>' ;
             } ;
@@ -125,6 +122,7 @@ $listerubrique = $statement3->fetchAll(PDO::FETCH_ASSOC);
         echo '<div class="texte">' 
             .  '<h3>' . $listeRelax[$i]['nom'] . '</h3>' 
             . '<p>' . '<img class="iconeadresse" src="./icones/map-marker-alt-solid.svg">' . $listeRelax[$i]['rue'] . ' à ' . $listeRelax[$i]['cp'] . ' ' . $listeRelax[$i]['commune'] . '<br>';
+        
         if ($listeRelax[$i]['web'] > ' '){
             echo '<img class="iconeweb" src="./icones/laptop-solid.svg">' . '<a id="lien" href="http://' . $listeRelax[$i]['web'] . '"/>' . $listeRelax[$i]['web'] . '</a>';
         };
