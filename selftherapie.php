@@ -21,7 +21,7 @@ try {
 
 //$statement2 = $pdo->query('SELECT * FROM t_relax ORDER BY cp ASC');
 
-$statement2 = $pdo->query('SELECT * FROM t_relax INNER JOIN t_rubriquerelax ON t_rubriquerelax.idRelax = t_relax.id INNER JOIN t_rubrique ON t_rubriquerelax.idRubrique = t_rubrique.id WHERE t_rubrique.activite = "Sport" ');
+$statement2 = $pdo->query('SELECT * FROM t_relax INNER JOIN t_rubriquerelax ON t_rubriquerelax.idRelax = t_relax.id INNER JOIN t_rubrique ON t_rubriquerelax.idRubrique = t_rubrique.id WHERE t_rubrique.activite = "Self-thérapie" ');
 
 $listeRelax = $statement2->fetchAll(PDO::FETCH_ASSOC);
 //var_dump($statement2);
@@ -53,20 +53,10 @@ $listeRelax = $statement2->fetchAll(PDO::FETCH_ASSOC);
     {  
         echo '<div class="listeRelax">';
         
-      
-        if ($listeRelax[$i]['activite'] == 'Sport' || 
-                 $listeRelax[$i]['activite'] == 'Yoga' || 
-                 $listeRelax[$i]['activite'] == 'Aikido' || 
-                 $listeRelax[$i]['activite'] == 'Pilate' || 
-                 $listeRelax[$i]['activite'] == 'Thai-Chi' || 
-                 $listeRelax[$i]['activite'] == 'Qi gong' || 
-                 $listeRelax[$i]['activite'] == 'Shiatsu' || 
-                 $listeRelax[$i]['activite'] == 'Marche Nordique' ){
-             echo '<img class="image" src="./photos/'.$listeRelax[$i]['idRR'] .'.jpg">' . '<button id="titresport">' . $listeRelax[$i]['nom'] . '</button>' ;
-            }
-        
-        else {
-             echo '<img class="image" src="./photos/'.$listeRelax[$i]['idRR'] .'.jpg">' . '<button id="titresport">' . $listeRelax[$i]['nom'] . '</button>' ;
+        if ($listeRelax[$i]['activite'] == 'Self-thérapie' || 
+                 $listeRelax[$i]['activite'] == 'Art-Thérapie' || 
+                 $listeRelax[$i]['activite'] == 'Méditation'){
+             echo '<img class="image" src="./photos/'.$listeRelax[$i]['idRR'] .'.jpg">' . '<button id="titretherapie">' . $listeRelax[$i]['nom'] . '</button>' ;
             } ;
         
         
