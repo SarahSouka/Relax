@@ -85,7 +85,7 @@
                 <div id="alentours">
                     <label for="commune" class="custom-select">In the surroundings of...</label>
                     <select name="cp" id="cp">
-                        <option value="">Commune</option>
+                        <option value="">District</option>
                         <option value="1000">1000 - Bruxelles</option>
                         <option value="1020">1020 - Laeken</option>
                         <option value="1030">1030 - Schaerbeek</option>
