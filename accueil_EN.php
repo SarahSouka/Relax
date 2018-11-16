@@ -21,10 +21,10 @@
 	        <div id="choix">
                 <form id="myForm" name="myForm" method="POST" action="resultat.php">
                 
-                <h1>Envies du moment...</h1>
+                <h1>Zin om...</h1>
                 
                 <div id="alentours">
-                    <label for="commune" class="custom-select">Aux alentours de...</label>
+                    <label for="commune" class="custom-select">In de omgeving van...</label>
                     <select name="cp" id="cp">
                         <option value="">Commune</option>
                         <option value="1000">1000 - Bruxelles</option>
@@ -53,11 +53,11 @@
                     </select>
                 </div>
                     <div id="checkbox">
-                        <label for="Nature"><span></span>Bol d'air frais</label><input type="checkbox" name="choix[]" value="Nature"  /><br /> 
-                        <label for="Sport"><span></span>Se défouler</label><input type="checkbox" name="choix[]" value="Sport" /><br /> 
-                        <label for="Détente"><span></span>Se relaxer</label><input type="checkbox" name="choix[]" value="Détente" /><br /> 
-                        <label for="Self-thérapie"><span></span>Se retrouver avec soi-même</label><input type="checkbox" name="choix[]" value="Self-thérapie" /><br /> 
-                        <label for="Art-Thérapie"><span></span>Envie de créer</label><input type="checkbox" name="choix[]" value="Art-Thérapie" />
+                        <label for="Nature"><span></span>Een beetje frisse lucht te halen</label><input type="checkbox" name="choix[]" value="Nature"  /><br /> 
+                        <label for="Sport"><span></span>Om stoom af te blaze</label><input type="checkbox" name="choix[]" value="Sport" /><br /> 
+                        <label for="Détente"><span></span>Om zich te ontspannen</label><input type="checkbox" name="choix[]" value="Détente" /><br /> 
+                        <label for="Self-thérapie"><span></span>Om zichzelf terug te vinden</label><input type="checkbox" name="choix[]" value="Self-thérapie" /><br /> 
+						<label for="Art-Thérapie"><span></span>Zin om iets te crééren</label><input type="checkbox" name="choix[]" value="Art-Thérapie" />
                     </div>
                         <input type="submit" value="envoyer" id="button">
                 </form>
@@ -104,5 +104,14 @@
             </script> -->
 
 	
-	<footer><p> &copy; Bénédicte Regnier, Floriane Jacques, Sarah Gueye, Cindy Colin - Interface 3</p></footer>
+	<footer>
+	<p> &copy; Bénédicte Regnier, Floriane Jacques, Sarah Gueye, Cindy Colin - Interface 3</p>
+	  <nav>
+	        <ul>
+	            <li><a href="accueil_FR.php">FR|</a></li>
+	            <li><a href="accueil_NL.php">NL|</a></li>
+	            <li><a href="accueil_EN.php">EN </a></li>
+	        </ul>
+	    </nav>
+	</footer>
 </body>
