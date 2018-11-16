@@ -225,14 +225,43 @@ background-color: rgba(252, 248, 251, 0.7);
 }
 */
 
-/*
-@media (max-width:1920px){
-    body{
-        margin-left: 150px;
-        margin-top: 150px;
-    }
+
+@media (max-width:1273px){
+   #titredetente, #titresport, #titretherapie,#titredivers,#titrenature {
+    background-color: rgba(252, 248, 251, 0.7);
+/*background-color: transparent;*/
+    font-family: 'Poppins', sans-serif;
+    color: #414141;
+    border: none;
+    width: 260px;
+    position: relative;
+    bottom: 37px;
+    left: 15px;
+    z-index: 1;
+    /*padding: 5px;*/
+   
 }
-  */     
+#titredetente{
+     border-bottom: 3px solid #91a9c6;
+}
+#titresport {
+ 
+    border-bottom: 3px solid #ea5852;
+}
+#titretherapie {
+ 
+    border-bottom: 3px solid #f3a5af;
+}
+#titredivers {
+
+    border-bottom: 3px solid yellow;
+}
+#titrenature{
+
+    border-bottom: 3px solid #94c674;
+}    
+}
+       
         
     
     
