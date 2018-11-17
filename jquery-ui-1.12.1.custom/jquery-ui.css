@@ -283,12 +283,12 @@
 	font-size: 1em;
 }
 .ui-widget.ui-widget-content {
-	border: 1px solid #d3d3d3;
+	border: 1px solid #ffffff;
 }
 .ui-widget-content {
 	border: 1px solid #aaaaaa;
 	background: #ffffff;
-	color: #222222;
+	color: #555555;
 }
 .ui-widget-content a {
 	color: #222222;
@@ -300,7 +300,7 @@
 	font-weight: bold;
 }
 .ui-widget-header a {
-	color: #222222;
+	color: #555555;
 }
 
 /* Interaction states
@@ -315,7 +315,7 @@ works properly when clicked or hovered */
 html .ui-button.ui-state-disabled:hover,
 html .ui-button.ui-state-disabled:active {
 	/*border: 1px solid #d3d3d3;*/
-	background: #e6e6e6;
+	background: #f1f1f1;
 	font-weight: normal;
 	color: #555555;
 }
@@ -688,7 +688,7 @@ a.ui-button:active,
 
 /* Overlays */
 .ui-widget-overlay {
-	background: #aaaaaa;
+	background: #e3e3e3;
 	opacity: .3;
 	filter: Alpha(Opacity=30); /* support: IE8 */
 }
