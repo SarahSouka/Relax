@@ -295,11 +295,13 @@ footer nav ul{
 /*------VERSION MOBILE--------------*/	
 @media (min-width: 1290px){
     .image{
+/*        margin: 15px;*/
         margin: 25px;
     }
 }
 
-@media (max-width: 959px)and(min-width: 6480px){
+@media (max-width: 959px){
+	/*and(min-width: 6480p)*/ 
 	nav li{
     font-size: 19px;
 	}
@@ -324,14 +326,18 @@ header > div:first-of-type {
 header > img{
 		width: 100px;
 		height: auto;
-}	
+}
+	header{
+		border-bottom: 1px dotted #ffe4ac;
+		
+	}
 
 header button {
     display: block;
     width: 50px;
     height: 50px;
-    padding: 5px;
-    margin: 10px;
+    
+    margin: 70px;
     border: none;
     background-color: transparent;
 }
@@ -341,7 +347,7 @@ header button span {
 /*	color:#FAB529;*/
 }
 nav li{
-    font-size: 16px;
+    font-size: 18px;
     width:45%;
 	}
     
@@ -376,7 +382,7 @@ nav ul {
    
 header>button,h1 { 
     display: block;
-/*    margin-right: -5%;*/
+	padding: 10%;
 }
 nav ul {
     display: block;
@@ -446,8 +452,24 @@ nav ul{
     left: 105%;
 	top: 0px;                     
 }
-   
-    
+footer nav {
+	position: inherit;
+	display: block;
+	width: 3%;
+	background-color: #ffffff;
+}
+footer > nav >ul{
+	padding-left: 5%;
+	display: inherit;
+	background-color:#ffffff;
+}
+footer{
+	padding-top: 30px;
+}  
+footer > nav > ul> li{
+	background-color:#ffffff;
+	}
+	
 }
     
 		
