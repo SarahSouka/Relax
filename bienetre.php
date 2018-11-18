@@ -96,53 +96,146 @@
           <h2 id="titrethe">Thé</h2>
           
           <div id="divsectionthe">
-              <div class="divthe">
-                <img class="imagethe" src="./imagesBienEtre/the1.jpg" alt="">
-                <div class="overlaythe">
-                    <div class="textethe">
-                        <h5>coucou</h5>
-                        <p>blablabla</p>
+             <div class="flexthe">
+                  <div class="divthe">
+                    <img class="imagethe" src="./imagesBienEtre/the1.jpg" alt="">
+                    <div class="overlaythe">
+                        <div class="textethe">
+                            <h5>Digestion</h5>
+                            <p>cardamome, fenouil, coriandre, malt d'orge, réglisse, menthe poivrée, gingembre, cannelle, poivre noir, girofle </p>
+                        </div>
                     </div>
+                  </div>
+                    <button>Acheter</button>
                 </div>
-                  <button>Acheter</button>
-              </div>
+                
+                 <div class="flexthe">
+                  <div class="divthe">
+                    <img class="imagethe" src="./imagesBienEtre/the2.jpg" alt="">
+                    <div class="overlaythe">
+                        <div class="textethe">
+                            <h5>Detox</h5>
+                            <p>citronnelle, pissenlit, cannelle, gingembre, réglisse, zeste de citron, mélisse, menthe poivrée</p>
+                        </div>
+                    </div>
+                  </div>
+                    <button>Acheter</button>
+                </div>
+                
+                <div class="flexthe">
+                  <div class="divthe">
+                    <img class="imagethe" src="./imagesBienEtre/the3.jpg" alt="">
+                    <div class="overlaythe">
+                        <div class="textethe">
+                            <h5>Respiration</h5>
+                            <p>eucalyptus, réglisse, gingembre, basilic, cardamome, cannelle, molène bouillon-blanc, luzerne, fenouil, thym, clous de girofle, poivre noir, vanille </p>
+                        </div>
+                    </div>
+                  </div>
+                    <button>Acheter</button>
+                </div>
+                
+                <div class="flexthe">
+                  <div class="divthe">
+                    <img class="imagethe" src="./imagesBienEtre/the4.jpg" alt="">
+                    <div class="overlaythe">
+                        <div class="textethe">
+                            <h5>Réconfort</h5>
+                            <p>cannelle, zeste d'orange, gingembre, thym, molène bouillon-blanc, citron, cardamome, poivre noir, clous de girofle, curcuma</p>
+                        </div>
+                    </div>
+                  </div>
+                    <button>Acheter</button>
+                </div>
+                
+                <div class="flexthe">
+                  <div class="divthe">
+                    <img class="imagethe" src="./imagesBienEtre/the5.jpg" alt="">
+                    <div class="overlaythe">
+                        <div class="textethe">
+                            <h5>Joie</h5>
+                            <p>basilic, réglisse, jus de citron séché, zeste d'orange, cannelle, gingembre, piment, cardamome, girofle*, poivre noir </p>
+                        </div>
+                    </div>
+                  </div>
+                    <button>Acheter</button>
+                </div>
+                
+                <div class="flexthe">
+                  <div class="divthe">
+                    <img class="imagethe" src="./imagesBienEtre/the6.jpg" alt="">
+                    <div class="overlaythe">
+                        <div class="textethe">
+                            <h5>Nuit</h5>
+                            <p>fenouil, camomille, menthe poivrée, cardamome, mélisse, citronnelle, valériane, sauge, fleurs de lavande</p>
+                        </div>
+                    </div>
+                  </div>
+                    <button>Acheter</button>
+                </div>
+                
+                <div class="flexthe">
+                  <div class="divthe">
+                    <img class="imagethe" src="./imagesBienEtre/the7.jpg" alt="">
+                    <div class="overlaythe">
+                        <div class="textethe">
+                            <h5>Harmonie</h5>
+                            <p>mélisse, rooibos, cannelle, écorces de cacao, basilic, menthe poivrée, camomille, romarin, poivre noir, fenouil, lavande </p>
+                        </div>
+                    </div>
+                  </div>
+                    <button>Acheter</button>
+                </div>
+                
+                <div class="flexthe">
+                  <div class="divthe">
+                    <img class="imagethe" src="./imagesBienEtre/the8.jpg" alt="">
+                    <div class="overlaythe">
+                        <div class="textethe">
+                            <h5>Equilibre</h5>
+                            <p>citronnelle, mélisse, pissenlit, ortie, menthe, feuilles de framboisier, lavande, fenouil, carrote,tilleul</p>
+                        </div>
+                    </div>
+                  </div>
+                    <button>Acheter</button>
+                </div>
+                
+                <div class="flexthe">
+                  <div class="divthe">
+                    <img class="imagethe" src="./imagesBienEtre/the9.jpg" alt="">
+                    <div class="overlaythe">
+                        <div class="textethe">
+                            <h5>Energie</h5>
+                            <p>thé vert, citronnelle, guarana, menthe poivrée, gingembre, fleurs de sureau, kombucha, bergamote, verveine </p>
+                        </div>
+                    </div>
+                  </div>
+                    <button>Acheter</button>
+                </div>
+                
+                <div class="flexthe">
+                  <div class="divthe">
+                    <img class="imagethe" src="./imagesBienEtre/the10.jpg" alt="">
+                    <div class="overlaythe">
+                        <div class="textethe">
+                            <h5>Eclat</h5>
+                            <p>cannelle, sauge, origan, cardamome, citronnelle, gingembre, girofle, verveine, fenugrec, coriandre </p>
+                        </div>
+                    </div>
+                  </div>
+                    <button>Acheter</button>
+                </div>
+
+
+
+
+
+
+
+                
+
+
               
-              <div class="divthe">
-                  <img src="./imagesBienEtre/the2.jpg" alt="">
-                  <button>Acheter</button>
-              </div>
-              <div class="divthe">
-                  <img src="./imagesBienEtre/the3.jpg" alt="">
-                  <button>Acheter</button>
-              </div>
-              <div class="divthe">
-                  <img src="./imagesBienEtre/the4.jpg" alt="">
-                  <button>Acheter</button>
-              </div>
-              <div class="divthe">
-                  <img src="./imagesBienEtre/the5.jpg" alt="">
-                  <button>Acheter</button>
-              </div>
-              <div class="divthe">
-                  <img src="./imagesBienEtre/the6.jpg" alt="">
-                  <button>Acheter</button>
-              </div>
-              <div class="divthe">
-                  <img src="./imagesBienEtre/the7.jpg" alt="">
-                  <button>Acheter</button>
-              </div>
-              <div class="divthe">
-                  <img src="./imagesBienEtre/the8.jpg" alt="">
-                  <button>Acheter</button>
-              </div>
-              <div class="divthe">
-                  <img src="./imagesBienEtre/the9.jpg" alt="">
-                  <button>Acheter</button>
-              </div>
-              <div class="divthe">
-                  <img src="./imagesBienEtre/the10.jpg" alt="">
-                  <button>Acheter</button>
-              </div>
           </div>
       </section>
        
