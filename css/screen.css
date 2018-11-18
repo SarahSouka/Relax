@@ -326,7 +326,11 @@ header > div:first-of-type {
 header > img{
 		width: 100px;
 		height: auto;
-}	
+}
+	header{
+		border-bottom: 1px dotted #ffe4ac;
+		
+	}
 
 header button {
     display: block;
@@ -457,11 +461,15 @@ footer nav {
 footer > nav >ul{
 	padding-left: 5%;
 	display: inherit;
+	background-color:#ffffff;
 }
 footer{
 	padding-top: 30px;
 }  
-    
+footer > nav > ul> li{
+	background-color:#ffffff;
+	}
+	
 }
     
 		
