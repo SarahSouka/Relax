@@ -16,8 +16,12 @@
 <body>
 
 	<header>
+         <?php
+            include("./head.php");
+         ?>
+         
           <div>
-            <h1><a href="#accueil"><img src="./assets/logo2.png"  alt="" ></a></h1>
+            <h1><a href="accueil_NL.php"><img src="./assets/logo3.png"  alt="" ></a></h1>
             <button><span class="fas fa-bars fa-2x"></span></button>
         </div>  
 
@@ -25,43 +29,43 @@
 		<div>
 			<nav>
 				<ul class="snip1275">
-					<li class="active"><a href="#detente">Ontspanning</a>
+					<li class="active"><a href="detente.php">Ontspanning</a>
 						<ul class="drop">
-							<li class="invisible"><a href="">Spa, Wellness</a></li>
-							<li class="invisible"><a href="">Massage</a></li>
-							<li class="invisible"><a href="">Atipische plaatsen</a></li>
+							<li class="invisible"><a href="spa.php">Spa, Wellness</a></li>
+							<li class="invisible"><a href="massage.php">Massage</a></li>
+							<li class="invisible"><a href="insolite.php">Atypische plaatsen</a></li>
 						</ul>
                     </li>
-					<li class="sport"><a href="#sport">Sport</a>
+					<li class="sport"><a href="sport.php">Sport</a>
 					<ul class="drop">
-							<li class="invisible"><a href="">Yoga</a></li>
-							<li class="invisible"><a href="">Pilates</a></li>
-							<li class="invisible"><a href="">Tai-Chi</a></li>
-							<li class="invisible"><a href="">Qi Gong</a></li>
+							<li class="invisible"><a href="yoga.php">Yoga</a></li>
+							<li class="invisible"><a href="pilates.php">Pilates</a></li>
+							<li class="invisible"><a href="taichi.php">Tai-Chi</a></li>
+							<li class="invisible"><a href="qigong.php">Qi Gong</a></li>
 						</ul>
 					</li>
 					
-					<li class="selftherapie"><a href="#self_therapie">Self-Therapy</a>
+					<li class="selftherapie"><a href="selftherapie.php">Self-Therapy</a>
 						<ul class="drop">
-							<li class="invisible"><a href="">Kunst</a></li>
-							<li class="invisible"><a href="">Meditatie</a></li>
+							<li class="invisible"><a href="art.php">Kunst</a></li>
+							<li class="invisible"><a href="meditation.php">Meditatie</a></li>
 						</ul>
 					</li>
 					
-					<li id="logo" class="invisible"><a href="accueil_FR.php"><img src="./assets/logo3.png"  alt=""></a>
+					<li id="logo" class="invisible"><a href="accueil_NL.php"><img src="./assets/logo3.png"  alt=""></a>
 					</li>
 					
-					<li class="nature"><a href="#nature">Natuur</a>
+					<li class="nature"><a href="nature.php">Natuur</a>
 						<!-- <ul class="drop">
 						    <li class="invisible"><a href="">Lieux en extérieur</a></li>
 						</ul>	 -->	
 					</li>
 					
-					<li class="bienetre"><a href="#bien_etre">Welzijn</a>
+					<li class="bienetre"><a href="bienetre.php">Welzijn</a>
 						<ul class="drop">
-							<li class="invisible"><a href="">Tips</a></li>
-							<li class="invisible"><a href="">Thee</a></li>
-							<li class="invisible"><a href="">Muziek</a></li>
+							<li class="invisible"><a href="bienetre.php#titretips">Tips</a></li>
+							<li class="invisible"><a href="bienetre.php#titrethe">Thee</a></li>
+							<li class="invisible"><a href="bienetre.php#titremusique">Muziek</a></li>
 						</ul>
 					</li>
 					
@@ -116,7 +120,7 @@
                         <label for="Sport"><span></span>Om stoom af te blazen</label><input type="checkbox" name="choix[]" value="Sport" /><br /> 
                         <label for="Détente"><span></span>Om zich te ontspannen</label><input type="checkbox" name="choix[]" value="Détente" /><br /> 
                         <label for="Self-thérapie"><span></span>Om zichzelf terug te vinden</label><input type="checkbox" name="choix[]" value="Self-thérapie" /><br /> 
-                        <label for="Art-Thérapie"><span></span>Zin om iets te crééren</label><input type="checkbox" name="choix[]" value="Art-Thérapie" />
+                        <label for="Art-Thérapie"><span></span>Zin om iets te creëren</label><input type="checkbox" name="choix[]" value="Art-Thérapie" />
                     </div>
                         <input type="submit" value="Sturen" id="button">
                 </form>

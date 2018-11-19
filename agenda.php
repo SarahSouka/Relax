@@ -178,5 +178,8 @@ for($i = 0; $i < count($reponse); $i++){
               fjs.parentNode.insertBefore(js, fjs);
             }(document, 'script', 'facebook-jssdk'));</script>
 
+   <?php
+    include("./footer.php")
+    ?>
 </body>
 </html>

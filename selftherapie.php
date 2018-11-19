@@ -81,6 +81,11 @@ $listeRelax = $statement2->fetchAll(PDO::FETCH_ASSOC);
 ?>       
  
     </div>
+    
+    <?php
+    include("./footer.php")
+    ?>
+    
     <div id="pissenlit"><img src="./assets/pissenlitRose.svg" alt="pissenlit">
     </div> 
 <!--    TEST -->

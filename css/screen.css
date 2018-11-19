@@ -19,13 +19,13 @@ body{
 }
 
 header > div {
-    width: 100%;    
     padding: 0px;
     margin: 0;
     display: flex;
     justify-content: space-between;
     flex-direction: row;
     align-items: center;
+    margin-left: 30px;
 }
 /*butt et h1 invisibles avant mobile*/
 header > div:first-of-type {
@@ -61,10 +61,10 @@ nav li{
 }
 
 .snip1275 > li:first-of-type{
-	padding-left: 7%;
+	padding-left: 6%;
 }
 .snip1275 > li:last-of-type{
-	padding-right: 7% ;
+	padding-right: 6% ;
 }
 /* Augmenter le padding à 10% */
 /*LOGO */
@@ -275,16 +275,18 @@ nav li:hover > ul {
 }
  footer {
 	display: flex;
-    width: 100%;    
+    width: 100%;
+    height: 80px; 
     padding-right: 80px;
     padding-left: 80px;
-    margin: 0;
+    /*margin:30px;*/
 	justify-content: space-between;
     flex-direction: row;
     align-items: baseline;
 }
 footer nav{
 	width: 6%;
+    margin-top: 0;
 }
 footer nav li{
 	font-size: 16px;
@@ -306,6 +308,7 @@ footer nav ul{
 	nav li{
     font-size: 19px;
 	}
+  
 /*
 	header h1, button { 
     display: none; 
@@ -315,29 +318,34 @@ footer nav ul{
 
 @media (max-width: 479px){
 
-
+body{
+    margin-left: 0px;
+    margin-right: 0px;   
+}
 header, main, footer {
 /*    width: 100%; */
-	margin-left: 0px;
-    margin-right: 0px;
+	/*margin-left: 0px;
+    margin-right: 0px;*/
 }
 header > div:first-of-type {
 	display: flex;
 }
 header > img{
-		width: 100px;
-		height: auto;
+    width: 100px;
+    height: auto;
 }
-	header{
-		border-bottom: 1px dotted #ffe4ac;
-		
+header > h1{
+    size : 90%;  
+    }		
+header{
+    border-bottom: 1px dotted #ffe4ac;
 	}
+		
 
 header button {
     display: block;
     width: 50px;
     height: 50px;
-    
     margin: 70px;
     border: none;
     background-color: transparent;
@@ -408,11 +416,32 @@ nav ul {
 #logo{
 	display:none;
 }
-.drop > li{
+
+.agenda >.drop > li{
     background-color: #FAB529;
     width: 150px;
 }
-.drop > li > a {
+.active >.drop > li{
+    background-color: #91A9C6;
+    width: 150px;
+}
+.sport >.drop > li{
+    background-color: #EA5852;
+    width: 150px;
+}
+.selftherapie >.drop > li{
+    background-color: #F3A5AF;
+    width: 150px;
+}
+.nature >.drop > li{
+    background-color: #94c674;
+    width: 150px;
+}
+.bienetre >.drop > li{
+    background-color: #9a8dc1;
+    width: 150px;
+}
+drop > li > a {
     font-size: 15px;
 } 
     

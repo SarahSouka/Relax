@@ -16,8 +16,11 @@
 <body>
 
 	<header>
+          <?php
+            include("./head.php");
+         ?>
           <div>
-            <h1><a href="#accueil"><img src="./assets/logo2.png"  alt="" ></a></h1>
+            <h1><a href="accueil_EN.php"><img src="./assets/logo3.png"  alt="" ></a></h1>
             <button><span class="fas fa-bars fa-2x"></span></button>
         </div>  
 
@@ -25,43 +28,43 @@
 		<div>
 			<nav>
 				<ul class="snip1275">
-					<li class="active"><a href="#detente">Relaxation</a>
+					<li class="active"><a href="detente.php">Relaxation</a>
 						<ul class="drop">
-							<li class="invisible"><a href="">Spa, Wellness</a></li>
-							<li class="invisible"><a href="">Massage</a></li>
-							<li class="invisible"><a href="">Breathtaking places</a></li>
+							<li class="invisible"><a href="spa.php">Spa, Wellness</a></li>
+							<li class="invisible"><a href="massage.php">Massage</a></li>
+							<li class="invisible"><a href="insolite.php">Breathtaking places</a></li>
 						</ul>
                     </li>
 					<li class="sport"><a href="#sport">Sport</a>
 					<ul class="drop">
-							<li class="invisible"><a href="">Yoga</a></li>
-							<li class="invisible"><a href="">Pilates</a></li>
-							<li class="invisible"><a href="">Tai-Chi</a></li>
-							<li class="invisible"><a href="">Qi Gong</a></li>
+							<li class="invisible"><a href="yoga.php">Yoga</a></li>
+							<li class="invisible"><a href="pilates.php">Pilates</a></li>
+							<li class="invisible"><a href="taichi.php">Tai-Chi</a></li>
+							<li class="invisible"><a href="qigong.php">Qi Gong</a></li>
 						</ul>
 					</li>
 					
-					<li class="selftherapie"><a href="#self_therapie">Self-Therapy</a>
+					<li class="selftherapie"><a href="selftherapie.php">Self-Therapy</a>
 						<ul class="drop">
-							<li class="invisible"><a href="">Art</a></li>
-							<li class="invisible"><a href="">Meditation</a></li>
+							<li class="invisible"><a href="art.php">Art</a></li>
+							<li class="invisible"><a href="meditation.php">Meditation</a></li>
 						</ul>
 					</li>
 					
 					<li id="logo" class="invisible"><a href="accueil_FR.php"><img src="./assets/logo3.png"  alt=""></a>
 					</li>
 					
-					<li class="nature"><a href="#nature">Nature</a>
+					<li class="nature"><a href="nature.php">Nature</a>
 						<!-- <ul class="drop">
 						    <li class="invisible"><a href="">Lieux en extérieur</a></li>
 						</ul>	 -->	
 					</li>
 					
-					<li class="bienetre"><a href="#bien_etre">Wel-beeing</a>
+					<li class="bienetre"><a href="bienetre.php">Well-beeing</a>
 						<ul class="drop">
-							<li class="invisible"><a href="">Tips</a></li>
+							<li class="invisible"><a href="bienetre.php#titrethe">Tips</a></li>
 							<li class="invisible"><a href="">Tea</a></li>
-							<li class="invisible"><a href="">Music</a></li>
+							<li class="invisible"><a href="bienetre.php#titremusique">Music</a></li>
 						</ul>
 					</li>
 					
@@ -113,7 +116,7 @@
                 </div>
                     <div id="checkbox">
                         <label for="Nature"><span></span>To breathe fresh air</label><input type="checkbox" name="choix[]" value="Nature"  /><br /> 
-                        <label for="Sport"><span></span>To blow of steam</label><input type="checkbox" name="choix[]" value="Sport" /><br /> 
+                        <label for="Sport"><span></span>To blow off steam</label><input type="checkbox" name="choix[]" value="Sport" /><br /> 
                         <label for="Détente"><span></span>To release the stress and relax</label><input type="checkbox" name="choix[]" value="Détente" /><br /> 
                         <label for="Self-thérapie"><span></span>To find back oneself</label><input type="checkbox" name="choix[]" value="Self-thérapie" /><br /> 
 						<label for="Art-Thérapie"><span></span>To create something</label><input type="checkbox" name="choix[]" value="Art-Thérapie" />
