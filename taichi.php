@@ -67,6 +67,9 @@ $listeRelax = $statement2->fetchAll(PDO::FETCH_ASSOC);
 ?>       
  
     </div> 
+    
+    <div id="pissenlit"><img src="./assets/pissenlitRouge.svg" alt="pissenlit">
+    </div>
 <!--    TEST -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"> </script>
 <!--    <script src="./js/low-script.js"></script>-->
