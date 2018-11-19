@@ -252,6 +252,10 @@
       </section>
       </div>
    </main>
+   
+   
+   <div id="pissenlit"><img src="./assets/pissenlitMauve.svg" alt="pissenlit">
+    </div>
     
 </body>
 </html>
