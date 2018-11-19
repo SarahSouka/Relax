@@ -14,15 +14,18 @@
 <title>intro</title>
 <!-- write your code here -->
 <style>
+  body {
+	overflow:hidden;
+  }
   #animation_container {
 	position:absolute;
 	margin:auto;
-	left:0;right:0;
-	top:0;bottom:0;
+	left:-100%;right:-100%;
+	top:-100%;bottom:-100%;
   }
 </style>
 <script src="https://code.createjs.com/createjs-2015.11.26.min.js"></script>
-<script src="intro.js?1542118810019"></script>
+<script src="intro.js?1542620839509"></script>
 <script>
 var canvas, stage, exportRoot, anim_container, dom_overlay_container, fnStartAnimation;
 function init() {
@@ -95,7 +98,7 @@ function handleComplete(evt,comp) {
 			stage.tickOnUpdate = true;		
 		}
 	}
-	makeResponsive(true,'both',true,1);	
+	makeResponsive(true,'both',true,2);	
 	AdobeAn.compositionLoaded(lib.properties.id);
 	fnStartAnimation();
 }

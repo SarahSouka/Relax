@@ -3,7 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <title>Document</title>
+<!--
     <link rel="stylesheet" href="./css/normalize.css">
+-->
+   <link rel="stylesheet" href="./css/screen.css">
     <link rel="stylesheet" href="./css/bienetre.css">
     <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
 </head>

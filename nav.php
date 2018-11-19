@@ -9,6 +9,10 @@
         <link rel="stylesheet" href="./css/normalize.css">
         <link rel="stylesheet" href="./fontawesome-free-5.2.0-web/fontawesome-free-5.2.0-web/css/all.css">
         <link rel="stylesheet" href="./css/screen.css">
+<!--
+            <link rel="stylesheet" href="./css/bienetre.css">
+-->
+
 <!--        <link rel="stylesheet" href="./css/form.css">-->
         <script src="./JS/hamburgerMenu.js"></script>
 <!--     	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>-->
@@ -58,9 +62,9 @@
 					
 					<li class="bienetre"><a href="bienetre.php">Bien-être</a>
 						<ul class="drop">
-							<li class="invisible"><a href="bienetre.php">Tips</a></li>
-							<li class="invisible"><a href="bienetre.php">Thé</a></li>
-							<li class="invisible"><a href="bienetre.php">Musique</a></li>
+							<li class="invisible"><a href="bienetre.php#titretips">Tips</a></li>
+							<li class="invisible"><a href="bienetre.php#titrethe">Thé</a></li>
+							<li class="invisible"><a href="bienetre.php#titremusique">Musique</a></li>
 						</ul>
 					</li>
 					

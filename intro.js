@@ -1428,7 +1428,7 @@ lib.properties = {
 	color: "#525252",
 	opacity: 1.00,
 	manifest: [
-		{src:"images/FondAcceuil.jpg?1542118809993", id:"FondAcceuil"}
+		{src:"images/FondAcceuil.jpg?1542620839485", id:"FondAcceuil"}
 	],
 	preloads: []
 };
