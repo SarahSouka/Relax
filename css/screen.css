@@ -293,12 +293,14 @@ footer nav ul{
 }	
 
 /*------VERSION MOBILE--------------*/	
+/*
 @media (min-width: 1290px){
     .image{
-/*        margin: 15px;*/
+        margin: 15px;
         margin: 25px;
     }
 }
+*/
 
 @media (max-width: 959px){
 	/*and(min-width: 6480p)*/ 
