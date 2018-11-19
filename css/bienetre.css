@@ -1,6 +1,10 @@
 *{
     font-family: 'Poppins';
 }
+body{
+     margin-left: 75px;
+    margin-right: 75px;
+}
 main{
     width: 100%;
     display: flex;
