@@ -9,24 +9,12 @@ try {
     $pdo = null;            
     die();            
 }
-//if ($_POST['nature']==true || $_POST['sport']==true || $_POST['detente']==true || $_POST['self']==true || $_POST['creer']==true){
-//    $requete = "SELECT t_relax.nom, t_relax.rue, t_rubrique.activite, t_rubriquerelax.idRelax, t_rubriquerelax.idRubrique FROM t_relax 
-//    INNER JOIN t_rubriquerelax
-//    ON t_rubriquerelax.idRelax = t_relax.id 
-//    INNER JOIN t_rubrique 
-//    ON t_rubriquerelax.idRubrique = t_rubrique.id";
-//}  
-
-//$statement2 = $pdo->query('SELECT * FROM t_relax WHERE commune = "Ixelles" ');
-
-//$statement2 = $pdo->query('SELECT * FROM t_relax ORDER BY cp ASC');
 
 $statement2 = $pdo->query('SELECT * FROM t_relax INNER JOIN t_rubriquerelax ON t_rubriquerelax.idRelax = t_relax.id INNER JOIN t_rubrique ON t_rubriquerelax.idRubrique = t_rubrique.id WHERE t_rubrique.activite = "Détente" ');
 
 $listeRelax = $statement2->fetchAll(PDO::FETCH_ASSOC);
-//var_dump($statement2);
-?>
 
+?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -36,8 +24,18 @@ $listeRelax = $statement2->fetchAll(PDO::FETCH_ASSOC);
     <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
     <link rel="stylesheet" href="./css/normalize.css"><!--avant style.css !!!-->
     <link rel="stylesheet" href="./css/screen.css">
-    <link rel="stylesheet" href="./css/style2.css"> 
+    <link rel="stylesheet" href="./css/style2.css">
+    <link rel="stylesheet" href="./css/footer.css">
+ 
 </head>
+<style>
+    body{
+        background-image: url(assets/pissenlitBleu.svg);
+        background-repeat: no-repeat;
+        background-position: 0px 150px;
+        background-size: 15%;
+    }
+</style>
 
 <body> 
   <header>
@@ -49,13 +47,9 @@ $listeRelax = $statement2->fetchAll(PDO::FETCH_ASSOC);
    
 <?php
     for ($i = 0; $i < count($listeRelax); $i++) 
-//       while ($listeRelax = $statement2->fetch())
     {  
         echo '<div class="listeRelax">';
         
-        /*if ($listeRelax[$i]['activite'] == 'Détente'){
-             echo '<img class="image" src="./photos/'. $listeRelax[$i]['idRR'] .'.jpg">' . '<button id="titredetente">' . $listeRelax[$i]['nom'] . '</button>' ;
-        }*/
         if ($listeRelax[$i]['activite'] == 'Massage'){
              echo '<img class="image" src="./photos/'.$listeRelax[$i]['idRR'] .'.jpg">' . '<button id="titredetente">' . $listeRelax[$i]['nom'] . '</button>' ;
             }
@@ -94,15 +88,5 @@ $listeRelax = $statement2->fetchAll(PDO::FETCH_ASSOC);
     include("./footer.php")
     ?>
     
-    <div id="pissenlit"><img src="./assets/pissenlitBleu.svg" alt="pissenlit">
-    </div>
-<!--    TEST -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"> </script>
-<!--    <script src="./js/low-script.js"></script>-->
-    <script>
-//    $('#titre').hover(function(){
-//      $(this).append($('.texte'))
-//   }); 
-    </script>
 </body>
 </html>

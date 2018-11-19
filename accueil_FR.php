@@ -9,6 +9,7 @@
         <link rel="stylesheet" href="./css/normalize.css">
         <link rel="stylesheet" href="./css/screen.css">
         <link rel="stylesheet" href="./css/form.css">
+        <link rel="stylesheet" href="./css/footer.css">
 
 </head>
 <body>
@@ -17,7 +18,6 @@
        include("./nav.php");
     ?> 
 	</header>
-	<!--  <img src="assets/fond.svg" alt="pissenlit"  width="700px" /> -->
 	        <div id="choix">
                 <form id="myForm" name="myForm" method="POST" action="resultat.php">
                 
@@ -63,59 +63,7 @@
                 </form>
             </div>
 
-            <script>
-                //var valuetwo = checkbox.getAttribute("data-valuetwo");
-                var valueTwo = $( "input" ).attr( "data-valuetwo" ); 
-                //alert(valueTwo);
-            </script>
-           
-<!--             
-            height="581px" -->
-            <!-- <script>
-            document.getElementById ("envoyer").addEventListener ("click", 
-            function (evenement){
-                // éviter le comportement de submit du bouton
-                evenement.preventDefault();
-                // créer un objet FormData
-                let FormData = new FormData();
-                formData.append('Nature', true);
-                formData.append('sport', true);
-                formData.append('detente', true);
-                formData.append('self-therapie', true);
-                formData.append('creer', true);
-                
-                let myForm = document.getElementById('myForm');
-                formData = new FormData(myForm);
-                
-                let xhr = new XMLHttpRequest();
-            
-                xhr.onreadystatechange = function (){
-                    if(xhr.readyState == 4){
-                        if (xhr.status == 200){
-                           console.log (xhr.responseText); 
-                        }
-                        else{
-                            console.log ("Erreur dans AJAX");
-                        }
-                    }
-                }
-                //envoyer le formulaire par POST
-                xhr.open ("POST","./essai2.php");
-                xhr.send (formulaire);
-            });
-            
-            
-            </script> -->
-
-	
-	<footer>
-	    <p> &copy; Bénédicte Regnier, Floriane Jacques, Sarah Gueye, Cindy Colin - Interface 3</p>
-	    <nav>
-	        <ul>
-	            <li><a href="accueil_FR.php"> FR |</a></li>
-	            <li><a href="accueil_NL.php"> NL |</a></li>
-	            <li><a href="accueil_EN.php"> EN </a></li>
-	        </ul>
-	    </nav>
-    </footer>
+	<?php
+    include("./footer.php")
+    ?>
 </body>

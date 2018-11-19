@@ -1,0 +1,22 @@
+
+footer{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    margin-top: 50px;
+    border-top: 1px solid #e4e7e6;
+
+}
+footer p{
+    color: #5c5c5b;
+    font-size: 12px;
+}
+footer nav li{
+    font-size: 16px;
+    display: inline-block;
+}
+	
+footer nav{
+    margin: 0;
+    width: 75px;
+}

@@ -1,5 +1,5 @@
 <footer>
-	    <p> &copy; Bénédicte Regnier, Floriane Jacques, Sarah Gueye, Cindy Colin - Interface 3</p>
+	    <p> &copy; Bénédicte Regnier, Floriane Jacques, Sarah Gueye, Cindy Colin - Interface3</p>
 	    <nav>
 	        <ul>
 	            <li><a href="accueil_FR.php"> FR |</a></li>

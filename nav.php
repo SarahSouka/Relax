@@ -9,13 +9,7 @@
         <link rel="stylesheet" href="./css/normalize.css">
         <link rel="stylesheet" href="./fontawesome-free-5.2.0-web/fontawesome-free-5.2.0-web/css/all.css">
         <link rel="stylesheet" href="./css/screen.css">
-<!--
-            <link rel="stylesheet" href="./css/bienetre.css">
--->
-
-<!--        <link rel="stylesheet" href="./css/form.css">-->
         <script src="./JS/hamburgerMenu.js"></script>
-<!--     	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>-->
     </head> 
 
 	<header>
@@ -54,10 +48,7 @@
 					<li id="logo" class="invisible"><a href="accueil_FR.php"><img src="./assets/logo3.png"  alt=""></a>
 					</li>
 					
-					<li class="nature"><a href="nature.php">Nature</a>
-						<!-- <ul class="drop">
-						    <li class="invisible"><a href="">Lieux en extérieur</a></li>
-						</ul>	 -->	
+					<li class="nature"><a href="nature.php">Nature</a>	
 					</li>
 					
 					<li class="bienetre"><a href="bienetre.php">Bien-être</a>
@@ -69,11 +60,6 @@
 					</li>
 					
 					<li class="agenda"><a href="agenda.php">Agenda</a>
-						<!-- <ul class="drop">
-						    <li class="invisible"><a href="">Retraites</a></li>
-						    <li class="invisible"><a href="">Evènements</a></li>
-						    <li class="invisible"><a href="">Page Facebook</a></li>
-						</ul> -->
 				    </li>
 				</ul>
 			</nav>

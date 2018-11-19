@@ -10,26 +10,27 @@
         <link rel="stylesheet" href="./jquery-ui-1.12.1.custom/jquery-ui.css">
         <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
         <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-<!--        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>-->
+
         
         <!-- CSS -->
         <link rel="stylesheet" href="./css/normalize.css">
         <link rel="stylesheet" href="./css/agenda.css">
+        <link rel="stylesheet" href="./css/footer.css">
         <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
         <link rel="stylesheet" href="./css/font-awesome.min.css">
         <link rel="stylesheet" href="./fontawesome-free-5.2.0-web/fontawesome-free-5.2.0-web/css/all.css">
-        <!--<link rel="stylesheet" href="./css/screen.css">-->
-        
-<!--
-        <script src="./JS/hamburgerMenu.js"></script>
--->
-     	
-     	
-
-
-        
-        
+          
 </head>
+<!--
+<style>
+    body{
+        background-image: url(assets/pissenlitJaune2.svg);
+        background-repeat: no-repeat;
+        background-position: 0px 150px;
+        background-size: 15%;
+    }
+</style>
+-->
 
 <body>
    <header>
@@ -56,9 +57,6 @@ try {
     die(); 
 }
 
-/*$sql = $pdo->query('SELECT date, event FROM datepicker ORDER BY date ASC');
-$calendrier = $sql->fetchAll();*/
-
 if (isset($_POST['date'])){
 $statement = $pdo->prepare('SELECT *, DATE_FORMAT(date,"%d") as jour, DATE_FORMAT(date, "%m") as mois
                             FROM t_agenda
@@ -69,7 +67,6 @@ $statement->bindValue(':datepick', $_POST['date'], PDO::PARAM_STR);
 
 $statement->execute();
 
-//var_dump($pdo->errorInfo());    
 $reponse = $statement->fetchAll(PDO::FETCH_ASSOC);
 
 for($i = 0; $i < count($reponse); $i++){
@@ -121,8 +118,6 @@ for($i = 0; $i < count($reponse); $i++){
         
         '</div>' .
         
-        
-        
         ' </div>';  
 }    
 
@@ -130,7 +125,6 @@ for($i = 0; $i < count($reponse); $i++){
     
 ?>
    
-  
     </div>
         
         <div>
@@ -153,7 +147,7 @@ for($i = 0; $i < count($reponse); $i++){
    
     </div>
     
-<!-- DATEPICKER -->
+        <!-- DATEPICKER -->
          <script>
           $(document).ready(function() {
             $( "#datepicker" ).datepicker({

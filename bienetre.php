@@ -9,8 +9,22 @@
    <link rel="stylesheet" href="./css/screen.css">
     <link rel="stylesheet" href="./css/bienetre.css">
     <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+    <link rel="stylesheet" href="./css/footer.css">
 </head>
+
+<!--
+<style>
+    body{
+        background-image: url(assets/pissenlitMauve.svg);
+        background-repeat: no-repeat;
+        background-position: 0px 150px;
+        background-size: 15%;
+    }
+</style>
+-->
+
 <body>
+    
     <header>
     <!-- NAV -->
    <?php
@@ -109,7 +123,7 @@
                         </div>
                     </div>
                   </div>
-                    <button>Acheter</button>
+                    <button>Essayez</button>
                 </div>
                 
                  <div class="flexthe">
@@ -122,7 +136,7 @@
                         </div>
                     </div>
                   </div>
-                    <button>Acheter</button>
+                    <button>Essayez</button>
                 </div>
                 
                 <div class="flexthe">
@@ -135,7 +149,7 @@
                         </div>
                     </div>
                   </div>
-                    <button>Acheter</button>
+                    <button>Essayez</button>
                 </div>
                 
                 <div class="flexthe">
@@ -148,7 +162,7 @@
                         </div>
                     </div>
                   </div>
-                    <button>Acheter</button>
+                    <button>Essayez</button>
                 </div>
                 
                 <div class="flexthe">
@@ -161,7 +175,7 @@
                         </div>
                     </div>
                   </div>
-                    <button>Acheter</button>
+                    <button>Essayez</button>
                 </div>
                 
                 <div class="flexthe">
@@ -174,7 +188,7 @@
                         </div>
                     </div>
                   </div>
-                    <button>Acheter</button>
+                    <button>Essayez</button>
                 </div>
                 
                 <div class="flexthe">
@@ -187,7 +201,7 @@
                         </div>
                     </div>
                   </div>
-                    <button>Acheter</button>
+                    <button>Essayez</button>
                 </div>
                 
                 <div class="flexthe">
@@ -200,7 +214,7 @@
                         </div>
                     </div>
                   </div>
-                    <button>Acheter</button>
+                    <button>Essayez</button>
                 </div>
                 
                 <div class="flexthe">
@@ -213,7 +227,7 @@
                         </div>
                     </div>
                   </div>
-                    <button>Acheter</button>
+                    <button>Essayez</button>
                 </div>
                 
                 <div class="flexthe">
@@ -226,19 +240,9 @@
                         </div>
                     </div>
                   </div>
-                    <button>Acheter</button>
+                    <button>Essayez</button>
                 </div>
 
-
-
-
-
-
-
-                
-
-
-              
           </div>
       </section>
        
@@ -259,9 +263,6 @@
    <?php
     include("./footer.php")
     ?>
-   
-   <div id="pissenlit"><img src="./assets/pissenlitMauve.svg" alt="pissenlit">
-    </div>
     
 </body>
 </html>

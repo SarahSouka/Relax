@@ -10,14 +10,6 @@ try {
     die();            
 }
 
-/*
-$noms = ['Flo','Ben','Cindy'];
-var_dump (implode ($noms," OR "));
-die();
-*/
-//var_dump($_POST);
-
-
 $sql = 'SELECT * FROM t_relax INNER JOIN t_rubriquerelax ON t_relax.id = t_rubriquerelax.idRelax 
                               INNER JOIN t_rubrique ON t_rubriquerelax.idRubrique = t_rubrique.id';
 
@@ -35,7 +27,6 @@ if (isset($_POST['choix'])){
   }
 };
 
-//var_dump($sql);
 
 $sql = 
 $statement2 = $pdo->prepare($sql);
@@ -43,17 +34,6 @@ $statement2 = $pdo->prepare($sql);
 $statement2->execute();
 
 $listeRelax = $statement2->fetchAll(PDO::FETCH_ASSOC);
-
-/*
-$sql2 ='SELECT id FROM t_rubriquerelax';
-$sql2 = 
-$statement3 = $pdo->prepare($sql);
-
-$statement3->execute();
-
-$listerubrique = $statement3->fetchAll(PDO::FETCH_ASSOC);
-*/
-
 
 ?>
 
@@ -67,7 +47,18 @@ $listerubrique = $statement3->fetchAll(PDO::FETCH_ASSOC);
     <link rel="stylesheet" href="./css/screen.css">
     <link rel="stylesheet" href="./css/style2.css">
     <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet"> 
+    <link rel="stylesheet" href="./css/footer.css">
+
 </head>
+
+<style>
+    body{
+        background-image: url(assets/pissenlitMulti.svg);
+        background-repeat: no-repeat;
+        background-position: 0px 150px;
+        background-size: 15%;
+    }
+</style>
 
 <body>
    <?php
@@ -77,7 +68,6 @@ $listerubrique = $statement3->fetchAll(PDO::FETCH_ASSOC);
    
 <?php
     for ($i = 0; $i < count($listeRelax); $i++) 
-//       while ($listeRelax = $statement2->fetch())
     {  
         echo '<div class="listeRelax">';
         
@@ -144,15 +134,6 @@ $listerubrique = $statement3->fetchAll(PDO::FETCH_ASSOC);
     include("./footer.php")
     ?>
     
-    <div id="pissenlit"><img src="./assets/pissenlitMulti.svg" alt="pissenlit">
-    </div>
-<!--    TEST -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"> </script>
-<!--    <script src="./js/low-script.js"></script>-->
-    <script>
-//    $('#titre').hover(function(){
-//    $(this).append($('.texte'))
-//   }); 
-    </script>
+
 </body>
 </html>
