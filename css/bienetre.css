@@ -1,0 +1,151 @@
+*{
+    font-family: 'Poppins';
+}
+main{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 75px;
+    margin-right: 75px;
+}
+
+/*-----NAV------*/
+#navbienetre{
+    margin-top: 20px;
+/*    width: 15%;*/
+}
+.liensBE{
+    display: block;
+    background-color: #f7faf9;
+    padding: 10px;
+    margin: 10px;
+    color: #5c5c5b;
+    text-align: center;
+}
+.liensBE:hover{
+    background-color: #9a8dc1;
+    color:#fff;
+}
+/*-----SECTIONS*/
+#divsections{
+    margin-top: 20px;
+    width: 80%;
+}
+/*----TITRES SECTIONS-----*/
+#titretips, #titrethe, #titremusique{
+    color: #9a8dc1;
+}
+
+/*----SECTION TIPS-----*/
+#divfigures{
+    display: flex;
+    flex-wrap: wrap;
+}
+.figure{
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+figcaption{
+    background-color: #f7faf9;
+    color: #5c5c5b;
+    text-align: center;
+    padding: 10px;
+}
+.figure a {
+    text-decoration: none;
+    background-color: #9a8dc1;
+    color:#fff;
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+}
+.figure a:hover{
+    opacity: 0.8;
+}
+
+/*-----SECTION THE-------*/
+#divsectionthe{
+    display: flex;
+    flex-wrap: wrap;
+}
+#divsectionthe button{
+/*    width: 100%;*/
+    padding: 10px;
+    margin: 10px;
+    background-color: #fff;
+    color: #9a8dc1;
+    border: 1px solid #e7eae9;
+}
+#divsectionthe button:hover{
+    border: 1px solid #9a8dc1;
+}
+.divthe{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 10px;
+}
+.divthe img{
+    
+    width: 150px;
+    height: auto;
+    
+}
+.flexthe{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.divthe {
+    position: relative;
+    width: 50%;
+}
+.imagethe{
+/*  display: block;*/
+    width: 100%;
+    height: auto;
+}
+.overlaythe{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #fff;
+    opacity: 0.8;
+    overflow: hidden;
+    width: 150px;
+    height: 0;
+    transition: .5s ease;
+}
+.divthe:hover .overlaythe{
+    height: 100%;
+}
+.textethe{
+    color: #5c5c5b;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.textethe p{
+    font-size: 10px;
+    padding-bottom: 10px;
+}
+.textethe h5{
+    margin-bottom: 0;
+}
+/*------SECTION MUSIQUE------*/
+#sectionmusique div{
+    display: flex;
+    flex-wrap: wrap;
+}
+.imgmusique{
+    margin: 10px;
+}
