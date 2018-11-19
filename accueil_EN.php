@@ -20,7 +20,7 @@
             include("./head.php");
          ?>
           <div>
-            <h1><a href="accueil_EN.php"><img src="./assets/logo2.png"  alt="" ></a></h1>
+            <h1><a href="accueil_EN.php"><img src="./assets/logo3.png"  alt="" ></a></h1>
             <button><span class="fas fa-bars fa-2x"></span></button>
         </div>  
 

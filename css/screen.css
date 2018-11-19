@@ -61,10 +61,10 @@ nav li{
 }
 
 .snip1275 > li:first-of-type{
-	padding-left: 7%;
+	padding-left: 6%;
 }
 .snip1275 > li:last-of-type{
-	padding-right: 7% ;
+	padding-right: 6% ;
 }
 /* Augmenter le padding à 10% */
 /*LOGO */
@@ -308,6 +308,7 @@ footer nav ul{
 	nav li{
     font-size: 19px;
 	}
+  
 /*
 	header h1, button { 
     display: none; 
@@ -330,19 +331,21 @@ header > div:first-of-type {
 	display: flex;
 }
 header > img{
-		width: 100px;
-		height: auto;
+    width: 100px;
+    height: auto;
 }
-	header{
-		border-bottom: 1px dotted #ffe4ac;
-		
+header > h1{
+    size : 90%;  
+    }		
+header{
+    border-bottom: 1px dotted #ffe4ac;
 	}
+		
 
 header button {
     display: block;
     width: 50px;
     height: 50px;
-    
     margin: 70px;
     border: none;
     background-color: transparent;
@@ -413,11 +416,32 @@ nav ul {
 #logo{
 	display:none;
 }
-.drop > li{
+
+.agenda >.drop > li{
     background-color: #FAB529;
     width: 150px;
 }
-.drop > li > a {
+.active >.drop > li{
+    background-color: #91A9C6;
+    width: 150px;
+}
+.sport >.drop > li{
+    background-color: #EA5852;
+    width: 150px;
+}
+.selftherapie >.drop > li{
+    background-color: #F3A5AF;
+    width: 150px;
+}
+.nature >.drop > li{
+    background-color: #94c674;
+    width: 150px;
+}
+.bienetre >.drop > li{
+    background-color: #9a8dc1;
+    width: 150px;
+}
+drop > li > a {
     font-size: 15px;
 } 
     
