@@ -33,7 +33,7 @@
 						<ul class="drop">
 							<li class="invisible"><a href="">Spa, Wellness</a></li>
 							<li class="invisible"><a href="">Massage</a></li>
-							<li class="invisible"><a href="">Atipische plaatsen</a></li>
+							<li class="invisible"><a href="">Atypische plaatsen</a></li>
 						</ul>
                     </li>
 					<li class="sport"><a href="#sport">Sport</a>
@@ -52,7 +52,7 @@
 						</ul>
 					</li>
 					
-					<li id="logo" class="invisible"><a href="accueil_FR.php"><img src="./assets/logo3.png"  alt=""></a>
+					<li id="logo" class="invisible"><a href="accueil_NL.php"><img src="./assets/logo3.png"  alt=""></a>
 					</li>
 					
 					<li class="nature"><a href="#nature">Natuur</a>
@@ -120,7 +120,7 @@
                         <label for="Sport"><span></span>Om stoom af te blazen</label><input type="checkbox" name="choix[]" value="Sport" /><br /> 
                         <label for="Détente"><span></span>Om zich te ontspannen</label><input type="checkbox" name="choix[]" value="Détente" /><br /> 
                         <label for="Self-thérapie"><span></span>Om zichzelf terug te vinden</label><input type="checkbox" name="choix[]" value="Self-thérapie" /><br /> 
-                        <label for="Art-Thérapie"><span></span>Zin om iets te crééren</label><input type="checkbox" name="choix[]" value="Art-Thérapie" />
+                        <label for="Art-Thérapie"><span></span>Zin om iets te creëren</label><input type="checkbox" name="choix[]" value="Art-Thérapie" />
                     </div>
                         <input type="submit" value="Sturen" id="button">
                 </form>

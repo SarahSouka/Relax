@@ -60,7 +60,7 @@
 						</ul>	 -->	
 					</li>
 					
-					<li class="bienetre"><a href="#bien_etre">Wel-beeing</a>
+					<li class="bienetre"><a href="#bien_etre">Well-beeing</a>
 						<ul class="drop">
 							<li class="invisible"><a href="">Tips</a></li>
 							<li class="invisible"><a href="">Tea</a></li>
@@ -116,7 +116,7 @@
                 </div>
                     <div id="checkbox">
                         <label for="Nature"><span></span>To breathe fresh air</label><input type="checkbox" name="choix[]" value="Nature"  /><br /> 
-                        <label for="Sport"><span></span>To blow of steam</label><input type="checkbox" name="choix[]" value="Sport" /><br /> 
+                        <label for="Sport"><span></span>To blow off steam</label><input type="checkbox" name="choix[]" value="Sport" /><br /> 
                         <label for="Détente"><span></span>To release the stress and relax</label><input type="checkbox" name="choix[]" value="Détente" /><br /> 
                         <label for="Self-thérapie"><span></span>To find back oneself</label><input type="checkbox" name="choix[]" value="Self-thérapie" /><br /> 
 						<label for="Art-Thérapie"><span></span>To create something</label><input type="checkbox" name="choix[]" value="Art-Thérapie" />
