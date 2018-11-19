@@ -64,7 +64,7 @@ nav li{
 	padding-left: 6%;
 }
 .snip1275 > li:last-of-type{
-	padding-right: 6% ;
+	padding-right: 5% ;
 }
 /* Augmenter le padding à 10% */
 /*LOGO */
@@ -334,9 +334,7 @@ header > img{
     width: 100px;
     height: auto;
 }
-header > h1{
-    size : 90%;  
-    }		
+		
 header{
     border-bottom: 1px dotted #ffe4ac;
 	}
