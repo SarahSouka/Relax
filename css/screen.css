@@ -19,13 +19,13 @@ body{
 }
 
 header > div {
-    width: 100%;    
     padding: 0px;
     margin: 0;
     display: flex;
     justify-content: space-between;
     flex-direction: row;
     align-items: center;
+    margin-left: 30px;
 }
 /*butt et h1 invisibles avant mobile*/
 header > div:first-of-type {
@@ -296,14 +296,12 @@ footer nav ul{
 }	
 
 /*------VERSION MOBILE--------------*/	
-/*
 @media (min-width: 1290px){
     .image{
-        margin: 15px;
+/*        margin: 15px;*/
         margin: 25px;
     }
 }
-*/
 
 @media (max-width: 959px){
 	/*and(min-width: 6480p)*/ 
