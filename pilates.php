@@ -20,7 +20,7 @@ $listeRelax = $statement2->fetchAll(PDO::FETCH_ASSOC);
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Essai cases (R-E)</title>
+    <title>Relax &amp; Enjoy - Pilates</title>
     <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
     <link rel="stylesheet" href="./css/normalize.css"><!--avant style.css !!!-->
     <link rel="stylesheet" href="./css/screen.css">

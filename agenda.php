@@ -3,7 +3,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Agenda</title>
+    <title>Relax &amp; Enjoy - Agenda</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
         <!-- JQUERY -->

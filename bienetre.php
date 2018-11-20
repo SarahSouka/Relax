@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Document</title>
+    <title>Relax &amp; Enjoy - Bien-être</title>
 <!--
     <link rel="stylesheet" href="./css/normalize.css">
 -->
