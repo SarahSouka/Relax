@@ -10,6 +10,8 @@
         <link rel="stylesheet" href="./fontawesome-free-5.2.0-web/fontawesome-free-5.2.0-web/css/all.css">
         <link rel="stylesheet" href="./css/screen.css">
         <script src="./JS/hamburgerMenu.js"></script>
+        <link rel="icon" type="image/png" sizes="16x16" href="./assets/Multi.jpg">
+        
     </head> 
 
 	<header>

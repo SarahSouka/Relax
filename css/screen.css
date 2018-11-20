@@ -108,7 +108,7 @@ nav a {
   content: '';
   -webkit-transition: all 0.35s ease;
   transition: all 0.35s ease;
-  background-color: #FAB529;
+  background-color: #ffc859;
   width: 0;
 }
 .snip1275 .active a:before,
@@ -140,7 +140,7 @@ nav a {
   content: '';
   -webkit-transition: all 0.35s ease;
   transition: all 0.35s ease;
-  background-color: #F3A5AF;
+  background-color: #f5c3c9;
   width: 0;
 }
 .snip1275 .nature a:before,
@@ -373,7 +373,7 @@ nav {
 nav ul {
     list-style-type: none;
 /*    couleur fond nav */
-    background-color: #efefef;
+    background-color: #ebebeb;
     flex-direction: column;
     opacity: 0.9;
     align-items: center;
@@ -417,7 +417,7 @@ nav ul {
 }
 
 .agenda >.drop > li{
-    background-color: #FAB529;
+    background-color: #ffc859;
     width: 150px;
 }
 .active >.drop > li{
@@ -429,7 +429,7 @@ nav ul {
     width: 150px;
 }
 .selftherapie >.drop > li{
-    background-color: #F3A5AF;
+    background-color: #f5c3c9;
     width: 150px;
 }
 .nature >.drop > li{
