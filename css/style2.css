@@ -17,6 +17,9 @@ body{
 /*  ajout transition texte  */
 /*    overflow: hidden;*/
     overflow: hidden;
+    padding-bottom: 50px;
+    /*height: 120%;*/
+    /*margin-bottom: 50px;*/
     
 }
         

@@ -12,16 +12,14 @@
     <link rel="stylesheet" href="./css/footer.css">
 </head>
 
-<!--
 <style>
     body{
         background-image: url(assets/pissenlitMauve.svg);
         background-repeat: no-repeat;
-        background-position: 0px 150px;
-        background-size: 15%;
+        background-position: 0px 300px;
+        background-size: 12%;
     }
 </style>
--->
 
 <body>
     
