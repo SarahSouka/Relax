@@ -10,7 +10,7 @@ body{
 }
         
 /*----- CASES IMAGES ------*/
-#boxImages{ margin-top: 100px;
+#boxImages{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;

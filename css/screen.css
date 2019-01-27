@@ -273,6 +273,11 @@ nav li:hover > ul {
 	display: block; 
 	opacity: 1;
 }
+
+.borderright{
+    border-right: 2px solid black;
+    padding-right: 4px;
+}
 /*
  footer {
 	display: flex;
@@ -285,6 +290,7 @@ nav li:hover > ul {
     flex-direction: row;
     align-items: baseline;
 }
+
 footer nav{
 	width: 6%;
     margin-top: 0;
@@ -298,6 +304,14 @@ footer nav ul{
 */
 
 /*------VERSION MOBILE--------------*/	
+
+@media (max-width: 1255px){
+    .borderright{
+    border-right: none;
+    padding-right: 4px;
+    }
+}
+
 @media (min-width: 1290px){
     .image{
 /*        margin: 15px;*/
@@ -306,6 +320,7 @@ footer nav ul{
 }
 
 @media (max-width: 959px){
+    
 	/*and(min-width: 6480p)*/ 
 	nav li{
     font-size: 19px;
@@ -318,9 +333,10 @@ footer nav ul{
 */
 }
 
-@media (max-width: 479px){
+@media (max-width: 900px){
 
 body{
+    background-image: none;
     margin-left: 0px;
     margin-right: 0px; 
     
@@ -338,9 +354,6 @@ header > img{
     height: auto;
 }
 		
-
-		
-
 header button {
     display: block;
     width: 50px;
@@ -417,27 +430,27 @@ nav ul {
 }
 
 .agenda >.drop > li{
-    background-color: #ffc859;
+    background-color: #cbc6c6;
     width: 150px;
 }
 .active >.drop > li{
-    background-color: #91A9C6;
+    background-color: #cbc6c6;
     width: 150px;
 }
 .sport >.drop > li{
-    background-color: #EA5852;
+    background-color: #cbc6c6;
     width: 150px;
 }
 .selftherapie >.drop > li{
-    background-color: #f5c3c9;
+    background-color: #cbc6c6;
     width: 150px;
 }
 .nature >.drop > li{
-    background-color: #94c674;
+    background-color: #cbc6c6;
     width: 150px;
 }
 .bienetre >.drop > li{
-    background-color: #9a8dc1;
+    background-color: #cbc6c6;
     width: 150px;
 }
 drop > li > a {
