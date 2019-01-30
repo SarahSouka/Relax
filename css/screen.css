@@ -335,6 +335,7 @@ footer nav ul{
 
 @media (max-width: 900px){
 
+    
 body{
     background-image: none;
     margin-left: 0px;
@@ -494,6 +495,9 @@ nav ul{
     left: 105%;
 	top: 0px;                     
 }
+    form {
+        background-image: none;
+    }
 footer nav {
 	position: inherit;
 	display: block;

@@ -58,7 +58,7 @@
 					<li class="nature"><a href="nature.php">Nature</a>
 					</li>
 					
-					<li class="bienetre"><a href="bienetre.php">Well-beeing</a>
+					<li class="bienetre"><a href="bienetre.php">Well-being</a>
 						<ul class="drop">
 							<li class="invisible"><a href="bienetre.php#titrethe">Tips</a></li>
 							<li class="invisible"><a href="">Tea</a></li>

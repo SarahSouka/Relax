@@ -21,7 +21,7 @@ body {
 /*    padding-bottom: 50px;*/
 }	
 
-#choix {
+#choix {margin-top: 140px;
     display: flex;
     justify-content: flex-end;
     align-content: flex-end;
